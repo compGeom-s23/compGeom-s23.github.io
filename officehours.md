@@ -1,7 +1,7 @@
 ---
 layout: default 
-title: Staff and office hours 
-nav_order: 5
+title: Office hours 
+nav_order: 4
 ---
 
 

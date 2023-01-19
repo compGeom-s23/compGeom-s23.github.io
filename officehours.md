@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: Staff and office hours 
+title: Office hours 
 nav_order: 5
 ---
 

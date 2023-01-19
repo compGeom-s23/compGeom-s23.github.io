@@ -7,9 +7,7 @@ nav_order: 5
 
 ### Project Partner Policy
 
-All projects are partner-optional. 
-
-You and your partner(s) will work together on the assignment throughout the whole process, you will write it and review it together, and will submit one assignment. The assignment must be a true joint effort, equally owned, created and understood by both partners. Specifically splitting the assignment and working on the problems separately is not allowed and violates the honor code for the class.
+All projects are partner-optional.  You and your partner(s) will work together on the assignment throughout the whole process, you will write it and review it together, and will submit one assignment. The assignment must be a true joint effort, equally owned, created and understood by both partners. Specifically splitting the assignment and working on the problems separately is not allowed and violates the honor code for the class.
 
 
 

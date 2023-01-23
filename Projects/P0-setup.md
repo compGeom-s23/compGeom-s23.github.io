@@ -1,5 +1,5 @@
 
-# ---Project 0 - Setup 
+# -----Project 0 - Setup 
 
 
 **Slack**

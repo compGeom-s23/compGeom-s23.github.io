@@ -19,42 +19,37 @@ __Classroom:__  VAC North 304
 
 **Prerequisites:** csci 2200 (Algorithms) and csci 2330 (Systems). In other words, knowledge of:
 
-- basic analysis: asymptotic notation, growth, solving recurrences.
+- basic analysis: asymptotic notation, growth, recurrences.
 - basic algorithm design techniques: divide-and-conquer, greedy.
 - basic algorithms and data structures: searching, sorting, binary search trees, priority queues.
 - basic programming in C/C++
-- basic Unix, working from a terminal, compiling using a Makefile
+- basic Unix terminal commands and Makefiles
 
 
-Computational geometry studies algorithms for problems that involve geometric data: (finite) sets of points, line segments and polygons. It is a young and growing field, driven by applications in graphics, robotics, autonomous vehicles, vision, image processing, and GIS. Some classical examples of geometric problems: Is a point inside or outside a given polygon? Do two polygons intersect? Given a set of points in the plane, what is the closest pair of points? What is the smallest convex polygon that contains a set of points in the plane? What are all the points that fall in a given query range? What is visible from a point in a polygon? How many points are sufficient to guard any polygon? Given two sets of segments, what are their intersections? Given a set of points, what is their smallest enclosing circle? Given a set of polygonal obstacles, and a polygonal robot moving in 2D with translation and rotation, what is an efficient path between a start and end location? And many more. This class is an introduction to computational geometry and will cover some of the fundamental problems and techniques in the field.
+Computational geometry studies algorithms for problems that involve geometric data: (finite) sets of points, line segments and polygons. It is a young and growing field, driven by applications in graphics, robotics, autonomous vehicles, vision, image processing, and GIS. Some classical examples of geometric problems: Is a point inside or outside a given polygon? Do two polygons intersect? Given a set of points in the plane, what is the closest pair of points? What is the smallest convex polygon that contains a set of points in the plane? What are all the points that fall in a given query range? What is visible from a point in a polygon? How many points are sufficient to guard any polygon? Given two sets of segments, what are their intersections? Given a set of points, what is their smallest enclosing circle? Given a set of polygonal obstacles, and a polygonal robot moving in 2D with translation and rotation, what is an efficient path between a start and end location? And many more. This class is an introduction to computational geometry and will cover some fundamental problems and techniques in the field.
 
 **Learning goals:** 
 
 - Understand advanced algorithms and techniques used in computational geometry
-- Understand algorithms at various levels of abstraction, from from conceptual ideas to code
-- Understand the importance in practice of degenerate cases
+- Understand algorithms at various levels of abstraction,  from abstract conceptual ideas to code
+- Understand the importance in practice of handling degenerate cases
 - Be able to come up with detailed code implementing a conceptual idea
-- Understand the interplay between theory and practice 
-- Take your C/C++ programming a step up 
+- Experience the interplay between theory and practice 
 
 ## Syllabus overview:
 
-The class will draw from these topics: 
+The class will draw from fundamental topics: 
 
-- Introduction and warmup (Finding collinear points, Finding the closest pair of points)
+- Introduction (collinear points, closest pair of points)
 - Geometric primitives (area of triangle, orientation, segment intersection)
-- Convex hulls in 2D  (naive, gift wrapping, quickhull, Graham scan, incremental, divide-and-conquer algorithm; lower bound)
+- Convex hulls in 2D  (naive, gift wrapping, quickhull, Graham scan, incremental, divide-and-conquer; lower bound)
 - Convex hulls in 3D
 - Segment intersection (Bentley-Ottman sweep)
 - Art gallery problem. Fisk's sufficiency proof.
 - Polygon triangulation (quadratic, based on ear removal algorithm;  triangulation of monotone polygons; polygon triangulation in O(n lg n) via trapezoidalization).
 - Geometric searching (orthogonal range searching with kd-trees and range trees).
 - Voronoi diagrams and Delaunay triangulations.
-- Combinatorial motion planning in 2D
-    - shortest path in a simple (non-convex) polygon with the funnel algorithm.
-    - point robot among polygonal obstacles (trapezoid decomposition, visibility graph)
-    - polygonal robot moving among polygonal obstacles with translation and rotation  
-    - C-space and C-obstacles; planning via graph search
+- Combinatorial motion planning in 2D (C-space and C-obstacles; planning via graph search; visibility graph)
 - Heuristical motion planning (grid-based techniques, sampling, PRM, RRT)
 
 
@@ -70,14 +65,17 @@ The class will draw from these topics:
   
 **Work and Grading Policy:** 
 
-The work for the class will come from programming projects (approximately biweekly),
+The work for the class consists of programming projects (approximately biweekly),
 
 - __Projects: 90%__ There will be a total of 7 projects. 
 
 - __Class engagement: 10%__ This means attending class, working with your group, asking questions, engaging in discussions, volunteering answers,  participating on Slack, attending office hours and striving to turn in good work. 
 
 
-**Collaboration policy: You can work alone, or you can pair with a partner (pair-programming).
+
+**Collaboration policy:** 
+
+You can work alone, or you can pair with a partner (pair-programming).
 
 __Collaboration across teams is at level-1:__ that is, verbal collaboration without solution sharing. You are allowed and encouraged to discuss ideas with other class members, but the communication should be verbal and additionally it can include diagrams on board. Noone is allowed to take notes during the discussion (being able to recreate the solution later frommemory is proof that you actually understood it). Communication cannot include sharing pseudocode for the problem. Please read the department's collaboration policy.
 

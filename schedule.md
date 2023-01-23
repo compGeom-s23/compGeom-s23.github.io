@@ -16,7 +16,7 @@ _Jan 24, 26_
   - slides: [intro.pdf]() ;  [collinear.pdf]() ;  [closestpair.pdf]()
   - class work: [ex-collinear.pdf]() ;  [ex-closestpair.pdf]()
 - __Project__: 
-  - Project 0 (setup)
+  - [Project 0 (setup)](Projects/P0-setup.md)
   - Project 1 (closest pair): due end of week 2 (Sunday Feb 5)
 
 

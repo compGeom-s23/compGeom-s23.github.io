@@ -105,6 +105,7 @@ Paste the output of that command (using your actual filename) into the Key field
 You are now all set to use SSH-key authentication with GitHub. When you clone a project, you'll need to go to the GitHub repository code page and copy the SSH URL rather than HTTPS (it will look something like `git@github.com/some-organization/some-repo-name` - don't change any part of this). Use this URL in your initial clone command, and you should never need to enter a username or password for GitHub. Note that you may need to enter "yes" to accept the key the first time you run a `git` command that uses the key (most likely the initial `git clone`).
 
 
+***
 
 **Working with Git/Github**
 
@@ -120,7 +121,7 @@ First you will go to the path where you want to place your local directory. For 
 cd ~/Desktop/CompGeom
 ```
 
-Now clone it:
+Now that you are where you want to be, clone it:
 
 ```
 git clone git@github.com:lauratoma/helloworld.git
@@ -143,9 +144,9 @@ Once cloned, the usual work cycle in Git is __pull-add-commit-push__:
 cd ~/Desktop/helloworld
 git pull
 ```
-Now your local repo is sync-ed with the master repo.
+Now your local repo is sync-ed with the master repo. You have the most recent version that was pushed. 
 
-- Now you can start working on the project: edit existing files and create new files. When you are done do a git status to find out the status of your repo:
+- Now you can start working on the project: edit existing files and create new files. When you are done do a `git status` to find out the status of your repo:
 ```
  git status 
  ```
@@ -153,20 +154,20 @@ this will show you what files are modified. Now stage the files that you want to
 ```
 git add hello.c
 ```
-Note: You should never add object files (.o files) and executables to the repo.
+Note: You should never add object files (.o files) and executables to the repo (You can do that either by not adding them explicitly, or by setting a `gitignore' file).
 
 - Commit to your local repo:
 ```
 git commit -m "describe what the changes represent"
 ```
 
-Note that commit does not take file names as arguments, and will update the local repo with the files that have been staged. Files that have not been specifically staged for commit, will not be commited.
+Note that `commit` does not take file names as arguments, and will update the local repo with the files that have been staged. Files that have not been specifically staged for commit, will not be commited.
 
 - Push the changes to the master repo:
 ```
 git push 
 ```
-Again, git push does not take file names as arguments; it will sync the master repo with the commited files in the local repo.
+Again, `git push` does not take file names as arguments; it will sync the master repo with the commited files in the local repo.
 There are more advanced featured of git which you may or may not need later, like branching, resolving merge conflicts, reversing changes, deleting files, and more ---- we'll figure those out later when the need arises. For now these basics commands will suffice.
 
 *** 

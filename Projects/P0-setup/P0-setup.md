@@ -8,6 +8,7 @@ We'll be using Slack for communication. The advantage of using Slack over email 
 
 I created three channels: #projects (for all project-related communication), #general (for class materials and general announcements), and #random (for everything else).
 
+***
 
 **Unix crash course**
 
@@ -15,12 +16,15 @@ Go through the Unix [crash course](https://tildesites.bowdoin.edu/~sbarker/unix/
 
 Nothing to submit. As always, if you run into problems, post on Slack!
 
+***
 
 **Compiling and running a C/C++ program from the terminal**
 
-Create a program that writes `Hello World'  and compile it and run it from the terminal, first by hand and then with a Makefile (which you create). To see how, follow the steps in the Unix crash coursses, above.  
+Create a program that writes `Hello World'  and compile it and run it from the terminal, first by hand and then with a Makefile (which you create). To see how, follow the steps in the Unix crash course, above.  
 
 Nothing to submit, just warmup. 
+
+***
 
 
 **Version Control with Git**
@@ -55,7 +59,7 @@ The server compares the string received from the client with the original string
 
 Setting up SSH-key authentication in Github:
 
-1. __Check to see if you have an SSH-key and if not, generate one:__
+- __Check to see if you have an SSH-key and if not, generate one:__
 
 If you have one, it must be in `~/.ssh/;` If you see an `id_rsa.pub` file, or something like this, it means you already have a public key. If you don't see one, then generate one. 
 
@@ -72,7 +76,7 @@ This has generated an RSA SSH key pair, located in the `.ss`h hidden directory i
 ~/.ssh/id_rsa.pub   <--------- the associate public key. This can be shared freely 
 ```
 
-2. __Configure your SSH-client on the machine from where you connect to Github, to use your SSH-key for authentication:__
+- __Configure your SSH-client on the machine from where you connect to Github, to use your SSH-key for authentication:__
 
 To do that, modify your `~/.ssh/config` file to automatically load keys into the SSH-agent and store passphrases in your keychain. You can do this with your favorite editor (for e.g. nano, atom, emacs, vim ). If this file does not exist, you need to create it.
 
@@ -88,7 +92,7 @@ If you had to create your SSH config file, you'll also need to set the file perm
 chmod 600 ~/.ssh/config
 ```
 
-3. __Configure Github to use your SSH-key for authentication:__
+- __Configure Github to use your SSH-key for authentication:__
 
 To do that go to you GitHub account page. In the upper-right corner, click your profile photo and click Settings. Click SSH and GPG keys. Click "New SSH key". In the In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air". Paste in the contents of your public key file (not your private key file!). You can display the contents of your public key file, assuming that your public key is named ~/.ssh/id_rsa.pub:
 
@@ -99,6 +103,7 @@ cat ~/.ssh/id_rsa.pub
 Paste the output of that command (using your actual filename) into the Key field of the GitHub settings page, then click Add SSH key.
 
 You are now all set to use SSH-key authentication with GitHub. When you clone a project, you'll need to go to the GitHub repository code page and copy the SSH URL rather than HTTPS (it will look something like `git@github.com/some-organization/some-repo-name` - don't change any part of this). Use this URL in your initial clone command, and you should never need to enter a username or password for GitHub. Note that you may need to enter "yes" to accept the key the first time you run a `git` command that uses the key (most likely the initial `git clone`).
+
 
 
 **Working with Git/Github**

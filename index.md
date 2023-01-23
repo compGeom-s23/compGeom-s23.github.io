@@ -60,17 +60,17 @@ The class will draw from fundamental topics:
 - [Computational geometry: algorithms and applications](https://www.amazon.com/Computational-Geometry-Applications-Mark-Berg/dp/3540779736/ref=pd_bxgy_b_img_z). Mark de Berg, Otfried Cheong, Mark van Kreveld, Mark Overmars.
 
 
+**Communication:**  Class communication will be entirely on Slack. You will need to monitor Slack for class updates, including possible cancellations or delays (in case there are any). The code to join Slack is posted on Canvas. 
 
      
-  
-**Work and Grading Policy:** 
-
-The work for the class consists of programming projects (7 projects, approximately biweekly) and in-class work. 
+ 
+**Work and Grading Policy:**  The work for the class consists of programming projects (7 projects, approximately biweekly) and in-class work. 
 
 - __Projects: 90%__ 
 
 - __Class engagement: 10%__ This means attending class, working with your group, asking questions, engaging in discussions, volunteering answers,  participating on Slack, attending office hours and striving to turn in good work. 
 
+Evaluation of your projects will be via demos. Everyone will meet with me (or the LAs) throughout the semester to demo their code. Tentatively aiming for three demos (first for projects 1 and 2, second for projectss 3 and 4, and third demo for projects s5 and 6), plus the finaal project demo. 
 
 
 **Collaboration policy:** 

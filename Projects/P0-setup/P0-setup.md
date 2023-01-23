@@ -1,24 +1,27 @@
 
-### Setup 
+# Setup 
 
 
 **Slack**
 
-We'll be using Slack for communication. The advantage of using Slack over email is that it keeps all messages in one place,  it's easy to keep conversations organized, and has a lot more cool options . I do not plan to use email at all for communication, and will send all class annoucements via Slack. I encourage everyone to do the same. If you want to send me a private message, Slack has the option of a "direct message (DM)". You can DM me, or anyone else in the class. And you can create your own channels, which can be private, to which you can invite your team mates (for e.g. when team-working on a project! really cool feature!). 
+We'll be using Slack for communication. The advantage of using Slack over email is that it keeps all messages in one place,  it's easy to keep conversations organized, and has a lot more cool options .  If you want to send me a private message, Slack has the option of a "direct message (DM)". You can DM me, or anyone else in the class. And you can create your own channels, which can be private, to which you can invite your team mates (for e.g. when team-working on a project! really cool feature!). 
 
 I created three channels: #projects (for all project-related communication), #general (for class materials and general announcements), and #random (for everything else).
 
 
-**Compiling and running a C/C++ program from the terminal**
-
-Follow [these](https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A0-setup/_basics.html) steps to create a Hello World program, and compile it and run it from the terminal.
-Nothing to submit, just warmup. If you run into problems, post on Slack!
-
 **Unix crash course**
 
-Go through the Unix [crash course](https://tildesites.bowdoin.edu/~sbarker/unix/)  maintained by Sean Barker (except for the version control section at the very end). You don't need to know everything upfront, but starting week 2 being familiar will greatly help.
+Go through the Unix [crash course](https://tildesites.bowdoin.edu/~sbarker/unix/)  maintained by Sean Barker. You don't need to know everything upfront, but starting week 2 being familiar will greatly help.
 
 Nothing to submit. As always, if you run into problems, post on Slack!
+
+
+**Compiling and running a C/C++ program from the terminal**
+
+Create a program that writes `Hello World'  and compile it and run it from the terminal, first by hand and then with a Makefile (which you create). To see how, follow the steps in the Unix crash coursses, above.  
+
+Nothing to submit, just warmup. 
+
 
 **Version Control with Git**
 

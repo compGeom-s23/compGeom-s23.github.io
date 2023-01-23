@@ -56,8 +56,8 @@ The class will draw from fundamental topics:
  
 **Textbooks:** There is no required textbook. The course is based on two classical textbooks, below. You can find them in Searles 224 (you're more than welcome to read them, but please do not take them out of 224).
 
-- (Computational geometry in C)[https://www.amazon.com/Computational-Geometry-Cambridge-Theoretical-Computer/dp/0521649765/ref=sr_1_3?ie=UTF8&qid=1389985599&sr=8-3&keywords=computational+geometry]. J. O'Rourke.
-- (Computational geometry: algorithms and applications)[https://www.amazon.com/Computational-Geometry-Applications-Mark-Berg/dp/3540779736/ref=pd_bxgy_b_img_z]. Mark de Berg, Otfried Cheong, Mark van Kreveld, Mark Overmars.
+- [Computational geometry in C](https://www.amazon.com/Computational-Geometry-Cambridge-Theoretical-Computer/dp/0521649765/ref=sr_1_3?ie=UTF8&qid=1389985599&sr=8-3&keywords=computational+geometry). J. O'Rourke.
+- [Computational geometry: algorithms and applications](https://www.amazon.com/Computational-Geometry-Applications-Mark-Berg/dp/3540779736/ref=pd_bxgy_b_img_z). Mark de Berg, Otfried Cheong, Mark van Kreveld, Mark Overmars.
 
 
 
@@ -65,9 +65,9 @@ The class will draw from fundamental topics:
   
 **Work and Grading Policy:** 
 
-The work for the class consists of programming projects (approximately biweekly),
+The work for the class consists of programming projects (7 projects, approximately biweekly) and in-class work. 
 
-- __Projects: 90%__ There will be a total of 7 projects. 
+- __Projects: 90%__ 
 
 - __Class engagement: 10%__ This means attending class, working with your group, asking questions, engaging in discussions, volunteering answers,  participating on Slack, attending office hours and striving to turn in good work. 
 

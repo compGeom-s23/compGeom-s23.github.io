@@ -14,7 +14,7 @@ _Jan 24, 26_
 - __Topics:__ Class intro. Warmup: Finding collinear points. Finding the closest pair of points. 
 - __Resources:__ 
   - slides:   [collinear.pdf](Lectures/L1-intro/cg-collinear.pdf) ;  [closestpair.pdf]()
-  - class work: [ex-collinear.pdf](Lectures/L1-inttro/ex-collinear.pdf) ;  [ex-closestpair.pdf]()
+  - class work: [ex-collinear.pdf](Lectures/L1-intro/ex-collinear.pdf) ;  [ex-closestpair.pdf]()
 - __Project__: 
   - [Project 0 (setup)](Projects/P0-setup.md)
   - Project 1 (closest pair): due end of week 2 (Sunday Feb 5)

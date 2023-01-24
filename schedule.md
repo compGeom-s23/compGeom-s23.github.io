@@ -13,7 +13,7 @@ _Jan 24, 26_
 
 - __Topics:__ Class intro. Warmup: Finding collinear points. Finding the closest pair of points. 
 - __Resources:__ 
-  - slides: [intro.pdf]() ;  [collinear.pdf]() ;  [closestpair.pdf]()
+  - slides:   [collinear.pdf]() ;  [closestpair.pdf]()
   - class work: [ex-collinear.pdf]() ;  [ex-closestpair.pdf]()
 - __Project__: 
   - [Project 0 (setup)](Projects/P0-setup.md)

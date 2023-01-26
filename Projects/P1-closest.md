@@ -5,7 +5,8 @@ nav_order: 7
 ---
 
 
-### Project 1: Finding the closest pair --two algorithms and an experimental evaluation
+
+## Project 1: Finding the closest pair --two algorithms and an experimental evaluation
 
 * __Assigned:__ Thursday, January 26
 * __Due:__ Monday, February 6, 11:59pm
@@ -24,7 +25,7 @@ complexity means in practice, to go from an idea to a working algorithm, and to 
 
 ***
 
-Overview
+### Overview
 
 The first algorithm you will implement is the naive, quadratic
 algorithm.
@@ -36,7 +37,8 @@ For the second algorithm, you will __not__ implement the optimal
   under certain assumptions about the data, it is (very) efficient. Another plus of gridding is that it can be used for many other problems, not just for the closest pair. 
 
 ***
-The gridding heuristic
+
+### The gridding heuristic
 
 Imagine you know the bounding box (BB) that contains the points.  The
 BB is specified by two x-values, `x1` and `x2`, and two y-values, `y1` and
@@ -53,7 +55,8 @@ cells they belong to.
 
 
 ***
-Using the grid to find the closest pair of points
+
+### Using the grid to find the closest pair of points
 
 
 You will need to come up with an algorithm to compute the closest
@@ -72,7 +75,7 @@ continue the search for q in this case?
 
 ***
 
-The bounding box of the points
+### The bounding box of the points
 
 Generally speaking you will want to compute the bounding box of your
 point set. In this project, however, you will generate the points
@@ -85,7 +88,7 @@ x2=200, y1=-200, y2=200.
 
 ***
 
-The interface of your code
+### The interface of your code
 
 
 * You will  generate the set of points randomly. Assume they have real
@@ -150,7 +153,7 @@ to compaare and check that the two functions actually find the same pair.
 
 ***
 
-Experimental evaluation
+### Experimental evaluation
 
 
 Denote the number of points by `n`. Generate sets of increasingly larger
@@ -164,7 +167,7 @@ and so on, until one of the algorithms becomes too slow.   Time each method sepa
 
 ***
 
-What and how to turn in
+### What and how to turn in
 
 
 You will receive the assignment on GitHub, but there will be no
@@ -187,7 +190,7 @@ Do not turn in any object  or executable files.
 
 
 ***
-Evaluation
+### Evaluation
 
 Your code will be evaluated on the correctness of the two algorithms,
 on the completeness of the README file (whether it includes

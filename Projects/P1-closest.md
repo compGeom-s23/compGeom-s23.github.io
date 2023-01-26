@@ -1,4 +1,11 @@
 
+---
+layout: default 
+title: Project 1
+nav_order: 7
+---
+
+
 ### Project 1: Finding the closest pair --two algorithms and an experimental evaluation<
 
 * __Assigned:__ Thursday, January 26

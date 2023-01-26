@@ -8,6 +8,7 @@ nav_order: 7
 
 ## Project 1: Finding the closest pair --two algorithms and an experimental evaluation
 
+*** 
 * __Assigned:__ Thursday, January 26
 * __Due:__ Monday, February 6, 11:59pm
 * Group policy: Partner-optional 

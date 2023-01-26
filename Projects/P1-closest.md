@@ -27,6 +27,7 @@ complexity means in practice, to go from an idea to a working algorithm, and to 
 
 ### Overview
 
+
 The first algorithm you will implement is the naive, quadratic
 algorithm.
 
@@ -39,6 +40,7 @@ For the second algorithm, you will __not__ implement the optimal
 ***
 
 ### The gridding heuristic
+
 
 Imagine you know the bounding box (BB) that contains the points.  The
 BB is specified by two x-values, `x1` and `x2`, and two y-values, `y1` and
@@ -76,6 +78,7 @@ continue the search for q in this case?
 ***
 
 ### The bounding box of the points
+
 
 Generally speaking you will want to compute the bounding box of your
 point set. In this project, however, you will generate the points
@@ -191,6 +194,7 @@ Do not turn in any object  or executable files.
 
 ***
 ### Evaluation
+
 
 Your code will be evaluated on the correctness of the two algorithms,
 on the completeness of the README file (whether it includes

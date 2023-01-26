@@ -1,7 +1,7 @@
 
 ---
 layout: default 
-title: Project 1
+title: ----Project 1
 nav_order: 7
 ---
 

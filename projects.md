@@ -10,7 +10,7 @@ nav_order: 3
 |                   |    Due                |
 |:------------------|:----------------------|
 | [Project 0 (setup)](Projects/P0-setup.md) |                       |
-| Project 1 (closest pair) |  due: end of week 2 (Sunday Feb 5)  |
+| [Project 1 (closest pair)](Projects/P1-closest.md) |  due: end of week 2 (Monday Feb 6, 11:59pm)  |
 
 
 

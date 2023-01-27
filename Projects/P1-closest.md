@@ -97,7 +97,7 @@ x2=200, y1=-200, y2=200.
 
 * You will  generate the set of points randomly. Assume they have real
   coordinates. For consistency, assume the range of the coordinates is
-  <tt>[0; 1,000]</tt>.
+  <tt>[0; 1,000,000]</tt>.
   
 * The number of points, `n`, should be read as a command
   line argument. For example,  

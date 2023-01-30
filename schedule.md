@@ -31,7 +31,7 @@ _Jan 30, Feb3_
 
 _Feb 6-10_
 
-- __Topics:__ The convex hull (2D).
+- __Topics:__ Convex hulls in 2D.
 - __Resources:__ 
 - __Project__: 
   - Project 2 - 2dhull

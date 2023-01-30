@@ -38,6 +38,10 @@ For the second algorithm, you will __not__ implement the optimal
   below). Gridding does not give good worst-case guarantees, but,
   under certain assumptions about the data, it is (very) efficient. Another plus of gridding is that it can be used for many other problems, not just for the closest pair. 
 
+
+
+![](closest.png)
+
 ***
 
 ### The gridding heuristic

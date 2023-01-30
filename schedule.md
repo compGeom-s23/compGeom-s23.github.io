@@ -18,7 +18,24 @@ _Jan 24, 26_
 - __Project__: 
   - [Project 0-setup](Projects/P0-setup.md) ; [Project 1-closest](Projects/P1-closest.md)
  
+### Week 2:
 
+_Jan 30, Feb3_
+
+- __Topics:__ Geometric primitives.  
+- __Resources:__ 
+- __Project__: 
+  - [work on project 1, due on Monday 2/6]; 
+ 
+### Week 3:
+
+_Feb 6-10_
+
+- __Topics:__ The convex hull (2D).
+- __Resources:__ 
+- __Project__: 
+  - Project 2 - 2dhull
+ 
   
 ***
 

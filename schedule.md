@@ -32,7 +32,7 @@ _Jan 30, Feb3_
 _Feb 6-10_
 
 - __Topics:__ Convex hulls in 2D. 
-- __Resources:__  [ex-hull.pdf](Lectures/L4-hull2d/ex-hull2d.pdf)
+- __Resources:__  [ex-hull.pdf](Lectures/L4-hull2d/ex-hull.pdf)
 - __Project__: 
   - [Project 2-hull2d](Projects/P2-hull2d.md)
  

@@ -28,11 +28,17 @@ _Jan 30, Feb3_
 ### Week 3:
 _Feb 6-10_
 
-- __Topics:__ Convex hulls in 2D (Gift wrapping, Quickhull, Graaham scan, Andrew's monotone chain, incremental, lower bound). 
+- __Topics:__ Convex hulls in 2D (Gift wrapping, Quickhull, Graham scan, Andrew's monotone chain, incremental, lower bound). 
 - __Resources:__  [ex-hull.pdf](Lectures/L4-hull2d/ex-hull.pdf)
 - __Project__: [Project 2-hull2d](Projects/P2-hull2d.md)
  
-  
+
+### Week 4: 
+_Feb 13-17_
+
+- __Topics:__ 2D space partitioning data structures (range trees and kd-trees) and range searhing. 
+- __Resources:__  
+- __Project__: 
 ***
 
 

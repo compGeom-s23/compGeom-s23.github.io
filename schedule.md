@@ -28,7 +28,7 @@ _Jan 30, Feb3_
 ### Week 3:
 _Feb 6-10_
 
-- __Topics:__ Convex hulls in 2D. 
+- __Topics:__ Convex hulls in 2D (Gift wrapping, Quickhull, Graaham scan, Andrew's monotone chain, incremental, lower bound). 
 - __Resources:__  [ex-hull.pdf](Lectures/L4-hull2d/ex-hull.pdf)
 - __Project__: [Project 2-hull2d](Projects/P2-hull2d.md)
  

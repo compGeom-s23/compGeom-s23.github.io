@@ -11,15 +11,15 @@ nav_order:
 
 *** 
 * __Assigned:__ Monday, February 20
-* __Due:__ Wednesdya, March 1st, 11:59pm
+* __Due:__ Wednesday, March 1st, 11:59pm
 * Group policy: Partner-optional 
 * Collaboration policy: Level 1
 
 
 
 In this assignment you will write code to build a two-dimensional
-kd-tree for a set of points in the plane, an to render it in a style
-inspired by [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian).
+kd-tree for a set of points in the plane, and to render it in
+[Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian) style.
 
 ![](mondrian1.png) 
 ![](mondrian2.png) 
@@ -34,8 +34,8 @@ inspired by [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian).
 ### Overview
 
 There are several parts to this asignment: building the kd-tree, 
-rendering it,  and fine-tuning the initializer points and colors to make
-it look artistic/interesting. 
+rendering it,  and fine-tuning the initial points and colors to make
+it look artistic or interesting. 
 
 Your program will take as argument on the command line the number of
 points.  For example,  
@@ -46,8 +46,7 @@ points.  For example,
 
 means that  it will generate a Mondrian-like painting  on `n=100` points.
 
-For this asignment,
-  make your `point2D` store the coordinates as doubles, not ints.
+For this asignment, make your `point2D` store the coordinates as `doubles`, not `ints`.
 
 Your default initializer will generate the set of points randomly.
 Feel free to add several initializers; in fact, you could start with
@@ -63,45 +62,46 @@ A CONSTANT, of course).
 You will need to define a data structure for a kd-tree. Since a
 kd-tree is a binary tree, we can use a similar recursive node
 structure as for a binary tree. Basically a tree consists of nodes,
-where a node stores some information about the node and a pointer to
+where a node stores some information about the node and pointers to
 its left and right child.
 
-Specifically, a kd-tree node will need to know its type (is it a
+A kd-tree node will need to know its type (is it a
 regular node or a leaf node); if a leaf node, it will need to know the
-point that's inside it; otherwise, if a vertical node, it will need to
-know the x-value of the vertical line through it; or if a horizontaal
-node, the y-value of the horizontal line through it.
+point inside it; otherwise, if a vertical node, it will need to
+know the x-value of the vertical line through it; if a horizontal
+node, it will need to know the y-value of the horizontal line through it.
 
-An example of such a node for a kd-tree is below. 
+An example of a kd-tree node is below (feel free to modify it as needed by your code). 
 
 
 ```
 typedef struct _treeNode {
-      point2D p;
+	point2D p;
 	          /* If this is a leaf node,  p represents the point stored in this leaf. 
                   If this is not a leaf node,  p represents the horizontal or vertical line
                   stored in this node. For a vertical line, p.y is
 				  ignored. For a horizontal line, p.x is ignored
                   */
-	  int type;
-				  / * this can be HORIZONAL, VERTICAL, or LEAAF
+	int type;
+		  / * this can be HORIZONAL, VERTICAL, or LEAAF
                     depending whether the node splits with a horizontal line or  vertical line.
-                     (note: this should be an enum).
+                    (note: this should be an enum).
                   */
-				  treeNode  *left, *right;
-				  /* left/below and right/above children. */
+	treeNode  *left, *right;
+		/* left/below and right/above children. */
 } treeNode; 
 ```
-A kd-tree data structure will store the pointer to the node that's the
-root of the tree. It's usually useful to store the number of points in
-the tree, so we'll do that:
+
+A kd-tree will store the pointer to the node that's the
+root of the tree. It's  useful to store the number of points in
+the tree, and also the heightt, so we'll do that:
 
 ```
 typedef struct _kdtree{
    treeNode* root;     //root of the tree
-   int n;                     //number of leaves/points  in the tree
-   intt height;            //its height
-   } kdtree;
+   int n;              //number of leaves/points  in the tree
+   int height;         //its height
+} kdtree;
    ```
 
 
@@ -128,7 +128,7 @@ class Kdtree {
      Kdtree(vector<point2d>& points); //build the kd-tree from the     points 
      ~Kdtree();
      ...
-	 };
+};
 ```
 
 
@@ -147,12 +147,12 @@ that prints some basic info about the kd-tree (the number of nodes and
 its height).  You will call this function after you build the tree to
 see basic info about the tree.
 
-The function to build a  kd-tree will taake the array of points as
+The function to build a  kd-tree will take the array of points as
 parameter. In C-style it might look like this:  
 
 ```
-/* Build a kd-tree for the set of points, where each leaf cell
-   contains  1 point.    Return a pointer to the tree.
+/* Build a kd-tree for the set of points, where each leaf cell ncontains  1 point.    
+   Return a pointer to the tree.
 */
 kdtree*  build_kdtree(vector<point2d> & points)
 ```
@@ -161,22 +161,21 @@ If you create a class, you'd have a constructor that does this:
 
 ```
   public:
-     Kdtree(vector<point2d>& p);  
+     Kdtree(vector<point2d>& points);  
 ```
 
 Note: Since your coordinates are `doubles` and you generate the points
 randomly, its unlikely that you'll get coincident points in your set
-of points. If your coordinates are ` ints`, you'll need to consider this
+of points. If your coordinates are `ints`, you'll need to consider this
 issue. Below we assume that the points are distinct.
 
-The generic constructor should first sort the points  by
-x-coord and by y-coord , respectitvely (check out `std::sort` for sorting vectors). 
+The first step in building a kdtree from points is to sort the points  by
+x-coord and by y-coord , respectitvely (check out `std::sort` for sorting vectors).
 
 ```
 vector<point2d> & points-by-x, vector<point2d>& points-by-y;
-//initialize them from poins   then sort them 
+//initialize then sort  
 ```
-
 
 When using `std::sort`, you will need to pass as a third parameter a
 function that compares two elements, and returns `true` if the
@@ -186,8 +185,8 @@ first element is to be considered smaller than the second element, and
 Note that points that have same x-coordinate or same y-coordinate can cause
 issues with the partition depending on how you handle ties. To handle
 these cases elegantly think of using a comparison function that
-uniquely order the points lexicographically (compare the first
-coordinate, and if equal, compare the second coordinate).
+ orders the points lexicographically  (compare the first
+coordinate, and if equal, compare the second coordinate). WIth a lexicographic ordering, the only ties are for duplicate points (which we assumed there are none). 
 
 
 ```
@@ -206,12 +205,10 @@ bool bottomToTopCmp(point2d& a, point2d& b) {
 
 
 Once you sort the points  left-to-right, and bottop-up,  you will want
-to pass these  to a helper function to build the kd-tree recursively,
-without needing to sort.  It might look something like this:
+to pass these  to a helper function to build the kd-tree recursively.  It might look something like this:
 
 ```
-treeNode* build_kdtree_rec(vector<point2d> & points-sorted-by-x,
-vvector<point2d>& points-sorted-by-y, int cut_type)
+treeNode* build_kdtree_rec(vector<point2d> & points-sorted-by-x, vector<point2d>& points-sorted-by-y, int cut_type)
 ```
 
 This helper function should build the kd-tree recursively. It should
@@ -229,7 +226,7 @@ The median is the value in the middle index of the sorted array (sorted by x or 
 
 For e.g. consider the points (2,6), (3,6), (3,5) examined in the x-coordinate. Middle point is (3,6). But the third's point x-value is also 3, so it will go on the left side. Thus this passes the entire array to the next level. Then we examine them in the y-coordinate: (3,5), (3,6), (2,6) Middle point is (3,6). But the third point has same y-coord as the median, which means it will also go on the left side. Thus this passes entire array to next level again, i.e. infinite recursion. These points are not coincident but are collinear in just the wrong way to cause infinite recursion.
 
-There are other ways to handle this, but an elegent way is to use the leftToRightCmp() instead of just comparing by x. In leftToRight order, no two points are equal (unless there are duplicate points, which we assume there aren't). All points before the median are strictly smaller than the median in leftToRight order. Put differently, a point p goes to the left of the median if p is smaller than the median in leftToRight() order, and goes to the right of the median otherwise. This way points are distributed evenly left and right and there is no infinite loop. It all works simply, when using the right comparator.
+There are other ways to handle this, but an elegent way is to use the `leftToRightCmp()` instead of just comparing by x. In `leftToRight` order, no two points are equal (unless there are duplicate points, which we assume there aren't). All points before the median are strictly smaller than the median in leftToRight order. Put differently, a point p goes to the left of the median if p is smaller than the median in `leftToRight()` order, and goes to the right of the median otherwise. This way points are distributed evenly left and right and there is no infinite loop. Using a compaaraator with no ties makes it all work very nicely. 
 
 
 ### Maintaining `points-sorted-by-x` and `points-sorted-by-y` through  the recursive calls
@@ -239,8 +236,8 @@ partition the points into `P1` and `P2` ----the set of points before and
 after the median.  And, you'll  need sorted versions of these sets  for the
 recursive calls:
 ```
-vector<point2d>  P1-sorted-by-x, P1-sorted-by-y, P2-sorted-by-x,
-P2-sorted-by-y; 
+vector<point2d>  P1-sorted-by-x, P1-sorted-by-y, P2-sorted-by-x, P2-sorted-by-y; 
+```
 
  You could generate `P1` and `P2` and sort them. Overall this O( n lg
  n)  sort at each step of the recursion would result in an overall O(n

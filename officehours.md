@@ -8,7 +8,7 @@ nav_order: 4
 ### Staff and office hours   (Spring 2023)
 
 
-The LAs this semester are Lily Smith and Evan Albers.  The weekly  **office hours**  schedule is below.  
+The LAs this semester are Lily Smith and Evan Albers.  The weekly  schedule is below.  
 
 
 |              |   Time  (Who & location )  |

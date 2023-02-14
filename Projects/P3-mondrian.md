@@ -282,8 +282,8 @@ Do not turn in any object  or executable files.
 
 
 Your code will be evaluated on the correctness of the algorithm, on
- the visuals of the image, and on the structure and quality of your
- code.
+the visual appeal of the image, and on the structure and quality of your
+code.
 
 
 ### Start early,  program well and enjoy the proces! 

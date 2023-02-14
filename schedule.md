@@ -36,7 +36,7 @@ _Feb 6-10_
 ### Week 4: 
 _Feb 13-17_
 
-- __Topics:__ 2D space partitioning data structures (range trees and kd-trees) and range searhing. 
+- __Topics:__ 2D space partitioning data structures (range trees and kd-trees) and range searching. 
 - __Resources:__  
 - __Project__: 
 ***

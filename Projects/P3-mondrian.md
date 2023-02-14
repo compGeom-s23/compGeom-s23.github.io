@@ -272,7 +272,7 @@ region fo the root.
 You will receive the assignment on GitHub, but there will be no
 startup code. To submit, simple push your code into your github
 repository for this assignment. Don't forget to add a README file with
-a brief, high-level description of the project.
+a brief, high-level description of the project (one paragraph).
 
 Do not turn in any object  or executable files.
 

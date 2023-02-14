@@ -21,7 +21,7 @@ In this assignment you will write code to build a two-dimensional
 kd-tree for a set of points in the plane, and to render it in
 [Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian) style.
 
-<img src="mondrian1.png" height="100"><img src="mondrian2.png" height="100"><img src="mondrian3.png" height="100"><img src="mondrian4.png" height="100"><img src="mondrian5.png" height="100"><img src="mondrian6.png" height="100">
+<img src="https://compgeom-s23.github.io/Projects/mondrian1.png" height="100"><img src="mondrian2.png" height="100"><img src="mondrian3.png" height="100"><img src="mondrian4.png" height="100"><img src="mondrian5.png" height="100"><img src="mondrian6.png" height="100">
 
 [comment]:![](mondrian1.png)
 

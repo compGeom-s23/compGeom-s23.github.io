@@ -39,6 +39,8 @@ _Feb 13-24_
 - __Topics:__ 2D space partitioning data structures (range trees and kd-trees) and range searching. 
 - __Resources:__  [ex-kdtrees.pdf](Lectures/L5-spacepartition/ex-kdtree.pdf)
 - __Project__: [work on project 2, due on Sunday 2/19]; [Project 3-mondrian](Projects/P3-mondrian.md)
+
+
 ***
 
 

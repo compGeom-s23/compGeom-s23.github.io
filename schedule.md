@@ -33,12 +33,13 @@ _Feb 6-10_
 - __Project__: [Project 2-hull2d](Projects/P2-hull2d.md)
  
 
-### Week 4: 
-_Feb 13-17_
+### Week 4, 5: 
+_Feb 13-24_
 
 - __Topics:__ 2D space partitioning data structures (range trees and kd-trees) and range searching. 
-- __Resources:__  
-- __Project__: 
+- __Resources:__  [ex-kdtrees.pdf](Lectures/L5-spacepartition/ex-kdtree.pdf)
+- __Project__: [work on project 2, due on Sunday 2/19]; [Project 3-mondrian](Projects/P3-mondrian.md)
 ***
+
 
 

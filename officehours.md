@@ -21,4 +21,4 @@ The LAs this semester are Lily Smith and Evan Albers.  The weekly  schedule is b
 | Fridays      |  x
 | Saturdays    |  x
 
-Laura's office hours (Searles 219): Tue & Thu, 3-4:30. ~~Most Fridays 1:30-3:30.~~ Some Fridays, 1:30-3:30.
+Laura's office hours (Searles 219): Tue & Thu, 3-4:30. ~~Most Fridays 1:30-3:30.~~ Unfortunately many Fridays I am double-booked, but you can usually find me after 4pm (message me to find out).

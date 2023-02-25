@@ -168,7 +168,7 @@ The first step in building a kd-tree from points is to sort the points  by
 x-coord and by y-coord , respectitvely (check out `std::sort` for sorting vectors).
 
 ```
-vector<point2d> points-by-x, vector<point2d>& points-by-y;
+vector<point2d> points-by-x, vector<point2d> points-by-y;
 ```
 
 When using `std::sort`, you will need to pass as a third parameter a
@@ -191,7 +191,7 @@ bool leftToRightCmp(const point2d & a, point2d & b) {
 }
 //return true  if a < b
 //orders the points lexicographically by (y,x)
-bool bottomToTopCmp(point2d& a, point2d& b) {
+bool bottomToTopCmp(const point2d& a, const point2d& b) {
    ...
 }
 ```
@@ -201,7 +201,9 @@ Once you sort the points  left-to-right, and bottom-to-top,  you will want
 to pass these  to a helper function to build the kd-tree recursively.  It might look something like this:
 
 ```
-treeNode* build_kdtree_rec(vector<point2d> & points-sorted-by-x, vector<point2d>& points-sorted-by-y, int cut_type)
+treeNode* build_kdtree_rec(vector<point2d> & points-sorted-by-x, 
+                           vector<point2d>& points-sorted-by-y, 
+			   int cut_type)
 ```
 
 This helper function should build the kd-tree recursively. It should
@@ -233,7 +235,7 @@ vector<point2d>  P1-sorted-by-x, P1-sorted-by-y, P2-sorted-by-x, P2-sorted-by-y;
  You could generate `P1` and `P2` and sort them. Overall this  sort at each step of the recursion would result in an overall O(n
  lg <sup>2</sup> n)   time for building the kd-tree, which is not optimal.
 
-Instead, the  point is to sort
+Instead, you want to sort
  the points only once, at the beginning.
  For each of `P1` and `P2`, you can generate the points in `P1` and `P2` in left-to-right and bottom-to-top order  simply 
  by traversing   `points-sorted-by-x` and `points-sorted-by-y`. 
@@ -245,7 +247,7 @@ For example, if you at a node with a horizontal split,  `P1-sorted-by-x`
  and comparing each point to the median: 
 
 ```
-if leftToRight(p, median) == true: p goes to P1-sorted-by-y
+if leftToRightCmp(p, median) == true: p goes to P1-sorted-by-y
 else p goes to P2-sorted-by-y
 ```
 

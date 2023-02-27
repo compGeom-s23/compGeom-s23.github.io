@@ -140,7 +140,7 @@ If you try www searching, you may be surprised to find that this is a popular pr
 
 * Implement testing whether the point is inside the polygon (the ray crossing algorithm). 
 
-* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see, likee so:  ![demo1](guard-demo-di.mov) ![demo2](guard-demo-di.mov)
+* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see, like so:  ![demo1](guard-demo-di.mov) ![demo2](guard-demo-di.mov)
 
 ![](guard3.png) 
 

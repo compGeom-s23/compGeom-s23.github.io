@@ -17,7 +17,7 @@ The LAs this semester are Lily Smith and Evan Albers.  The weekly  schedule is b
 | Mondays      |  x
 | Tuesdays     |  7-9pm, Evan, Searles 224
 | Wednesdays   |  x
-| Thursdays    |  ~7-9pm, Evan,Searles 224~
+| Thursdays    |  x ~7-9pm, Evan,Searles 224~
 | Fridays      |  x
 | Saturdays    |  x
 

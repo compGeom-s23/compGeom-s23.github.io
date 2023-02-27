@@ -54,7 +54,7 @@ Once the user is done entering a simple polygon,  the next step is to click on t
 
 The guard has to be inside the polygon. You can assume that the user enters a guard that is inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave it to the end. We'll discuss the basic idea in class, but the degenerate cases are messy;  there is full pseudocode in the O'Rourke textbook which I suggest you follow).
 
-Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function that render it with a different color. 
+Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function that render it. 
 
 
 
@@ -98,6 +98,7 @@ Something to be aware of is that openGL can only render filled polygons that are
 Even though it's not convex, the visible polygon has some nice properties that will make rendering it a lot easier!
 
 
+__Rendering a transparent polygon:__  If you want transparency you can specify the color using 4 values, the usual RGB values plus a value that represents the transparency. [to continue]
 
 
 

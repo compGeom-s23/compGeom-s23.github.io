@@ -19,13 +19,16 @@ nav_order: 10
 
 In this project you will write code to find the visible area of a guard in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum,  and   a point inside this polygon which represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard.  Note that the area that's visible must reside einside the musum (can't see through the walls), and must be a polygon (can't have holes and islands).  We'll refer to it sa the _visible polygon_. 
 
+![](guard1.png)
+
+
 To manage complexity we'll split this project into two parts:
 
 Part 1:  Read the polygon and the guard from the user, compute the visible polygon and display it.
 
 Part 2: Extend so that the guard is moving inside the polygon and the visible area is re-computed and displayed as the guard is moving. Move the guard so  that the guard does not get stuck in a corner of the polygon.
 
-![](guard1.png)
+
 
 ***
 

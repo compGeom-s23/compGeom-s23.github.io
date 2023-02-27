@@ -33,10 +33,10 @@ Part 2: Extend so that the guard is moving inside the polygon and the visible ar
 
 Unlike previous projects this one does not need to take any arguments on the command line. To initialize a polygon and the position of a guard inside the polygon you will use the mouse (see examples in class). 
 
-The user should  press `s` to start the polygon, then click in the window on the desired location of the vertices, then press `e` when the polygon is done. Then press `g` to enter the location of the guard.   The user is expected to enter the polygon in counter-clockwise boundary order. It's always helpful (and good style) to print a message as the program starts letting the user know the interface: 
+The user should  press `s` to start the polygon, then click in the window on the desired location of the vertices, then press `e` when the polygon is done.    The user is expected to enter the polygon in counter-clockwise boundary order. It's always helpful (and good style) to print a message as the program starts letting the user know the interface: 
 ``` 
 press 's' to start entering the vertices of the polygon and 'e' to end. 
-The vertices shoud be entered in ccw direction
+Please enter the vertices counter-clockwise 
 ```
 
 Once the user is done entering the polygon, your code should check whether the polygon is simple (by implementing a function to do that); if it is simple, it should print a message that the test is passed: 
@@ -46,7 +46,10 @@ testing if polygon is simple.. yes
 Otherwise, it should print a message that the polygon is not simple and clear the polygon so that the use can start again. 
  
  
-Once the user is done entering aa simple polygon,  the next step is to click on the desired locaation of the guard. The guard has to be inside the polygon. You can assume that the user enters a guard that's inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave itto the end, and you check out the full code in the OR textbook (the degenerate cases are messy, but there is full pseudocode in the textbook).
+Once the user is done entering a simple polygon,  the next step is to click on the desired location of the guard.  In terms of interface,  no specific requirements.  You could assume that any mouse click once the polygon is finished represents a guard; or you can require that the user presses `g` before clicking on the location of a guard, otherwise the moue clicks are ignored.  This is up to you, but make sure to document it in the Readme file and also while the program is running so that the user is able to run your code (for e.g. you could maae your `keypress` function  print the interface of your code when  key `h` is pressed).
+
+
+The guard has to be inside the polygon. You can assume that the user enters a guard that is inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave itto the end, and you check out the full code in the OR textbook (the degenerate cases are messy, but there is full pseudocode in the textbook).
 
 Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function that render it with a different color. 
 
@@ -154,14 +157,14 @@ Do not turn in any object or executable files.
 Your code will be evaluated on the supporting functionality you implemented, on the correctness of the visibility polygon and the number of test cases your algorithm passes,  and on the structure and quality of your code. 
 - appropriate documentation in README.md  
 - checking if the polygon entered by the user is simple 
-- checking if the guard entered by the user is inside or outside the polygon [EXTRA CREDIT]
+- checking if the guard entered by the user is inside or outside the polygon [extra credit]
 - rendering the visibility polygon filled 
 - the guard is moving properly and  does not get stuck in corners 
-- multiple guards [EXTRA]
-- 
+- multiple (moving) guards [extra credit]
 
 
 
+***
 
 This project is significantly harder than the previous ones, and has many pieces that you'll have to put together (such as segment intersection) and handle degenerate cases. It is crucial that you develop your code one piece at a time, and test befor eyou move on to the next.  
 

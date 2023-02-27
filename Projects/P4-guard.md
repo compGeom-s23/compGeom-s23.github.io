@@ -23,7 +23,7 @@ Part 1:  Read the polygon and the guard from the user, compute the visible polyg
 
 Part 2: Extend so that the guard is moving inside the polygon and the visible area is re-computed and displayed as the guard is moving. Move the guard so  that the guard does not get stuck in a corner of the polygon.
 
-![](guard0.png)
+![](guard1.png)
 
 ***
 

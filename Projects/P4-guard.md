@@ -100,13 +100,12 @@ Even though it's not convex, the visible polygon has some nice properties that w
 
 ### Some ideas to take this a step up 
 
-If you want to go above and beyond and implement an improved algorithm, a first idea is to try a radial sweep with a priority queue, which will lead to an `O(n lg n)` approach. There are recent results that show how to compute this in `O(n)` time. If you are considering an improved algorithm the papers listed below may be helpful (if you want to go down this path you will demo your code in class, get a round of applause, extra credit, and feel really amazing).   
+If you want a challenge,  try to come up with an improved algorithm that runs in `O(n lg n)` using a radial sweep (process the vertices in radial order around the guard).  Several algorithm are known for computing the visible polygon faster
+than the naive `O(n<sup>2</sup>)` algorithm: the algorithm by  Joe and Simpson runs in `O(n)` time, and the one by Asano in `O(n lg n)` time. A
+recent algorithm by Mungiu et al seems to be the fastest in practice.   If you are considering an improved algorithm the papers listed below may be helpful. 
 
+If you want to go down this path you will demo your code in class, get a round of applause, extra credit, and generally feel amazing.   
 
-Several algorithm are known for computing the visible polygon faster
-than the naive `O(n<sup>2</sup>)` algorithm: the algorithm by  Joe and
-Simpson runs in `O(n)` time, and the one by Asano in `O(n lg n)` time. A
-recent algorithm by Mungiu et al seems to be the fastest in practice. 
 
 
 *  <a

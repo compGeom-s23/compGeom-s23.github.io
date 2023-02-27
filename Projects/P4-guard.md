@@ -121,6 +121,18 @@ recent algorithm by Mungiu et al seems to be the fastest in practice.   If you a
  * <a href="https://doc.cgal.org/latest/Visibility_2/index.html#Chapter_2D_Visibility_Computation">CGAL
   visibility algorithms</a>
   
+If you try www searching, you may be surprised to find that this is a popular problem with cool applications and visualizations. Here's some interesting/relevant links links which I found: 
+
+* <a href="http://ncase.me/sight-and-light/">Sight-and-light</a> 
+
+* <a href="https://legends2k.github.io/2d-fov/">Field of view and los in 2d</a>
+  
+  
+* <a href="http://www.redblobgames.com/articles/visibility/">2d
+  visibility</a>
+
+ * <a href="https://davidglavas.me/computing-visibility-polygons/">Glavas
+  blog on computing visibility polygons</a>
 
 
 
@@ -134,18 +146,6 @@ recent algorithm by Mungiu et al seems to be the fastest in practice.   If you a
 
 *** 
 
-#### Some cool apps: 
-
-* <a href="http://ncase.me/sight-and-light/">Sight-and-light</a> 
-
-* <a href="https://legends2k.github.io/2d-fov/">Field of view and los in 2d</a>
-  
-  
-* <a href="http://www.redblobgames.com/articles/visibility/">2d
-  visibility</a>
-
- * <a href="https://davidglavas.me/computing-visibility-polygons/">Glavas
-  blog on computing visibility polygons</a>
 
 
 *** 

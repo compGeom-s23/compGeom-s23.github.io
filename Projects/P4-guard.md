@@ -173,7 +173,9 @@ Your code will be evaluated on the supporting functionality you implemented, on 
 
 ***
 
+### Start early, program well and enjoy the proces!
+
 This project is significantly harder than the previous ones and has many pieces that you'll have to put together (such as segment intersection) while handling degenerate cases. It is crucial that you develop your code one piece at a time, and test before you move on to the next.  From the beginning, design your code  knowing that you will spend 90% of the time debugging it.   Make the debugging easier.
 
-### Start early, program well and enjoy the proces!
+
 

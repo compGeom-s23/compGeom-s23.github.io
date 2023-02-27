@@ -46,15 +46,20 @@ Once the user is done entering the polygon, your code should check whether the p
 ```
 testing if polygon is simple: yes
 ```
-Otherwise, it should print a message that the polygon is not simple and clear the polygon so that the use can start again. 
+Otherwise, it should print a message that the polygon is not simple and clear the polygon so that the use can start again.  This suggest writing aa function to test whether two segments intersect, which might look like this: 
+```
+\\return true if ab intersects with cd 
+bool segseg_intersect(point 2d a, b, c, d)
+```
+ 
  
  
 Once the user is done entering a simple polygon,  the next step is to click on the desired location of the guard.  In terms of interface,  no specific requirements.  You could assume that once the polygon is finished, any mouse click  represents a guard; or you can require that the user presses `g` before clicking on the location of a guard, otherwise the mouse clicks are ignored.  This is up to you, but make sure to document it in the Readme file and also while the program is running so that aanyone is able to run your code (for e.g. you could make your `keypress` function  print the interface of your code when  key `h` is pressed).
 
 
-The guard has to be inside the polygon. You can assume that the user enters a guard that is inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave it to the end. We'll discuss the basic idea in class, but the degenerate cases are messy;  there is full pseudocode in the O'Rourke textbook which I suggest you follow).
+The guard has to be inside the polygon. You can assume that the user enters a guard that is inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave it to the end. We'll discuss the basic idea in class, but the degenerate cases are messy;  there is full pseudocode in the O'Rourke textbook which I suggest you check out and follow.
 
-Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function that render it. 
+Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function to render it. 
 
 
 
@@ -74,9 +79,7 @@ As we try out various cases we make a couple of observations:
 bool isVisible(Vector<point2d> polygon, int i, point2d p) 
 ```
 
-* The visible polygon consists of the vertices of the museum polygon that are visible, possibly interleaved with points interior to the edges of the museum that represent  intersections with rays from the guard.  The question is: how to compute these interior points? You will need to shoot rays through some vertices of the museum (which ones?), and, for each ray, find its first intersection with the boundary of the museum.
-
-Some questions you will need to answer are:  through what vertices do you shoot the rays, and how do you get the points along the boundary of the visible polygon, in the right order? 
+* The visible polygon consists of the vertices of the museum polygon that are visible, possibly interleaved with points interior to the edges of the museum that represent  intersections with rays from the guard.  The question is: how to compute these interior points? You will need to shoot rays through some vertices of the museum (which ones?), and, for each ray, find its first intersection with the boundary of the museum.   Some questions you will need to answer are:  through what vertices do you shoot the rays, and how do you get the points along the boundary of the visible polygon, in the right order? 
 
 ![](guard2.png)
 
@@ -104,7 +107,7 @@ __Rendering a transparent polygon:__  If you want transparency you can specify t
 
 ### Some ideas to take this a step up 
 
-If you want a challenge,  try to come up with an improved algorithm that runs in `O(n lg n)` using a radial sweep (process the vertices in radial order around the guard).  Several algorithm are known for computing the visible polygon faster
+If you want a challenge,  try to come up with an improved algorithm that runs in `O(n lg n)` using a radial sweep (hint: process the vertices in radial order around the guard).  Several algorithm are known for computing the visible polygon faster
 than the quadratic algorithm: the algorithm by  Joe and Simpson runs in `O(n)` time, and the one by Asano in `O(n lg n)` time. A
 recent algorithm by Mungiu et al seems to be the fastest in practice.   If you are considering an improved algorithm the papers listed below may be helpful.  If you want to go down this path you will demo your code in class, get a round of applause, extra credit, and generally feel amazing.   
 
@@ -148,7 +151,9 @@ recent algorithm by Mungiu et al seems to be the fastest in practice.   If you a
 *** 
 
 ### What and how to turn in
-You will receive the assignment on GitHub, but there will be no startup code. To submit, simple push your code into your github repository for this assignment. Don’t forget to add a README file containing:  a brief, description of the project; how to use your code (what keys to press to drawa the polygon and anything else in the interface); a list of bugs (if any) and when they happen;  a list of the main functions you implemented (); any extra features you implemented. 
+You will receive the assignment on GitHub, but there will be no startup code. To submit, simple push your code into your github repository for this assignment. 
+
+Add a README file containing:  a brief, description of the project;  info on the interface, i.e. everything one  needs to  know in order to run your code; a list of known bugs (if any) and when they happen;  a list of the main functions you implemented (); any extra features you implemented. 
 
 Do not turn in any object or executable files.
 
@@ -162,6 +167,7 @@ Your code will be evaluated on the supporting functionality you implemented, on 
 - rendering the visibility polygon filled 
 - the guard is moving properly and  does not get stuck in corners 
 - multiple (moving) guards [extra credit]
+- improved algorithm [extra credit]
 
 
 

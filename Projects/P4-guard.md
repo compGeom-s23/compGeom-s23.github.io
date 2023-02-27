@@ -49,7 +49,7 @@ testing if polygon is simple: yes
 Otherwise, it should print a message that the polygon is not simple and clear the polygon so that the use can start again.  This suggest writing aa function to test whether two segments intersect, which might look like this: 
 ```
 \\return true if ab intersects with cd 
-bool segseg_intersect(point 2d a, b, c, d)
+bool seg_seg_intersect(point 2d a, b, c, d)
 ```
  
  
@@ -128,9 +128,9 @@ recent algorithm by Mungiu et al seems to be the fastest in practice.   If you a
 
 * Implement testing whether the point is inside the polygon (the ray crossing algorithm). 
 
-* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see.
+* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see, likee so:  ![demo1](guard-demo-di.mov) ![demo2](guard-demo-di.mov)
 
-![](guard3.png)
+![](guard3.png) 
 
 *** 
 

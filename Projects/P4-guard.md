@@ -108,17 +108,16 @@ than the naive `O(n<sup>2</sup>)` algorithm: the algorithm by  Joe and
 Simpson runs in `O(n)` time, and the one by Asano in `O(n lg n)` time. A
 recent algorithm by Mungiu et al seems to be the fastest in practice. 
 
-<ul>
-  <li><a
+
+*  <a
   href="http://cs.smith.edu/~jorourke/books/ArtGalleryTheorems/Art_Gallery_Chapter_8.pdf">Joe
   and Simpson's O(n) visibility polygon</a>
 											  
-  <li><a href="https://arxiv.org/pdf/1403.3905v1.pdf">Efficient
+ * <a href="https://arxiv.org/pdf/1403.3905v1.pdf">Efficient
   computation  of visibility polygons</a> (2014)
   <li><a href="https://doc.cgal.org/latest/Visibility_2/index.html#Chapter_2D_Visibility_Computation">CGAL
   visibility algorithms</a>
   
-</ul>
 
 
 

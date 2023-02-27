@@ -101,7 +101,7 @@ Something to be aware of is that openGL can only render filled polygons that are
 Even though it's not convex, the visible polygon has some nice properties that will make rendering it a lot easier!
 
 
-__Rendering a transparent polygon:__  If you want transparency you can specify the color using 4 values, the usual RGB values plus a value that represents the transparency. [to continue]
+__Rendering a transparent polygon:__  If you want transparency you can specify the color using 4 values, the usual RGB values plus a value that represents the transparency. You also need to tell OpenGL to blend. [to continue]
 
 
 
@@ -142,7 +142,9 @@ If you try www searching, you may be surprised to find that this is a popular pr
 
 * Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see, like so:  
 
-![demo1](guard-demo-di.mov) ![demo2](guard-demo-wdk.mov)
+![demo1](https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/dylanisaac-guarding-demo.mov)
+
+![demo1](https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/wk-moving_guards.mov)
 
 ![](guard3.png) 
 

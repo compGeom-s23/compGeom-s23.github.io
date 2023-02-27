@@ -17,7 +17,7 @@ nav_order: 10
 
 ***
 
-In this project you will write code to find the visible area of a guard in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum,  and   a point inside this polygon that represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard. To manage complexity we'll split it into two parts:
+In this project you will write code to find the visible area of a guard in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum,  and   a point inside this polygon which represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard. To manage complexity we'll split it into two parts:
 
 Part 1:  Read the polygon and the guard from the user, compute the visible polygon and display it.
 
@@ -29,43 +29,35 @@ Part 2: Extend so that the guard is moving inside the polygon and the visible ar
 
 ### The interface
 
-Unlike previous projects this one does not need to take any arguments on the commaand line. To initialize a polygon and the position of a guard inside the polygon you will use the mouse (see examples in class). 
+Unlike previous projects this one does not need to take any arguments on the command line. To initialize a polygon and the position of a guard inside the polygon you will use the mouse (see examples in class). 
 
-The user is expected to enter the polygon in counter-clockwise boundary order. The polygon should be simple. Your code should check whether the polygon is simple (by implementing a function to do that); if it is simple, it should print a message that the test is passed;
+The user should  press `s` to start the polygon, then click on the location of the vertices, then click 'e' when the polygon is done. Then press `g` to enter the location of the guard.   The user is expected to enter the polygon in counter-clockwise boundary order. Print a message as you start: 
+``` 
+press 's' to start entering the vertices of the polygon and 'e' to end. 
+The vertices shoud b entered in ccw direction
+```
 
+Once th user is done eentering the polygon, your code should check whether the polygon is simple (by implementing a function to do that); if it is simple, it should print a message that the test is passed;
 ```
 testing if polygon is simple.. yes
 ```
- Otherwise, it should print a message that the polygon is not simple, and clear the polygon so that the use can start again. 
+Otherwise, it should print a message that the polygon is not simple, and clear the polygon so that the use can start again. 
  
  
-
-The guard has to be inside the polygon. You can assume that the user enteers a agurad thata's inside.   Ideally (extra credit) there would be a function that tests whether a point is inside a polygon ---- we'll talk about this in class, and it's a nice idea (the degenerate cases are messy, but there is full pseudocode in the textbook).
+The guard has to be inside the polygon. You can assume that the user enters a agurad that's inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class (the degenerate cases are messy, but there is full pseudocode in the textbook).
 
 Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function that render it with a different color. 
 
-
-### Renndering the visible polygon 
-
-In  OpenGL can render a polygon in two ways: just its boundary (GL_LINE mode), or filled (GL_FILL mode), by turning on one of:
-
-```
-glPolygonMode(GL_LINE);
-//glPolygonMode(GL_FILL);
-```
-
-Something to be aware of is that openGL can only render filled polygons that are convex. This seems like a big limitation, however if you think about it a little it becomes clear that it is not straightforward how to render a non-convex polygon filled --- to do that essentially you need to compute the triangulation of the polygon, and then render one triangle at a time. Computing a triangulation of a non-convex polygon is a bigger problem which we'll talk about in the coming weeks, and OpenGL does not do it  as part of 'glDraw'.  Luckily the visible polygon has some nice properties that make rendering it a lot eassier.   You will need to render the visible non-convex polygon filled.
 
 
 
 ### Computing the visible polygon
 
-The crux of this assignment is to come up with an algorithm to compute the visible polygon of the guard. We have not talked specifically about this problem in class and the goal  is to come up with a solution on your own. In terms of running time, a quadratic algorithm will suffice. 
-
+The crux of this project is to come up with an algorithm to compute the visible polygon of the guard. We have not talked specifically about this problem in class and the goal  is to come up with a solution on your own. In terms of running time, a quadratic algorithm will suffice. 
 
 Towards an algorithm:  Draw a couple of polygons and try out some cases.  Start with simple polygons, such as convex.   How do you compute the visible polygon of a point inside a convex polygon? Now move to non-convex polygons: what is different? 
 
-As you try out various cases we maake a couple of observations: 
+As we try out various cases we make a couple of observations: 
 
 1. Not all vertices of a non-convex polygon are necessarily visible. This suggests a helper function to determine if a vertex of a polygon is visible from the guard point which might look something like this:   
 
@@ -79,6 +71,26 @@ bool isVisible(Vector<point2d> polygon, int i, point2d p)
 Some questions you will need to answer are:  through what vertices do you shoot the rays, and how do you get the points along the boundary of the visible polygon, in the right order? 
 
 ![](guard4.png)![](guard5.png)![](guard6.png)[](guard7.png)
+
+
+
+### Rendering the visible polygon 
+
+You will need to render the visible polygon filled. Note that visible polygon is not necessarily convex. 
+
+OpenGL has two modes for rendering polygons: boundary (`GL_LINE` mode) or filled (`GL_FILL` mode). To select one or the other you need to set the polygon mode: 
+
+```
+glPolygonMode(GL_LINE);
+//glPolygonMode(GL_FILL);
+```
+
+Something to be aware of is that openGL can only render filled polygons that are __convex__. This seems like a big limitation, however if you think about it a little it becomes clear that it is not straightforward how to render a non-convex polygon filled: to do that essentially you need to compute the triangulation of the polygon, and then render one triangle at a time. Computing a triangulation of a non-convex polygon is a bigger problem which we'll talk about in the coming weeks, and OpenGL does not do it  as part of  the `glDraw` function.  
+
+Even though it's not convex, the visible polygon has some nice properties that will make rendering it a lot easier!
+
+
+
 
 
 ### Some ideas to take this a step up 
@@ -102,6 +114,8 @@ recent algorithm by Mungiu et al seems to be teh fastest in practice.
   visibility algorithms</a>
   
 </ul>
+
+
 
 #### Some more ideas for extra features: 
 

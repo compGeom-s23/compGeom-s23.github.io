@@ -39,20 +39,20 @@ Unlike previous projects this one does not need to take any arguments on the com
 The user should  press `s` to start the polygon, then click in the window on the desired location of the vertices, then press `e` when the polygon is done.    The user is expected to enter the polygon in counter-clockwise boundary order. It's always helpful (and good style) to print a message as the program starts letting the user know the interface: 
 ``` 
 press 's' to start entering the vertices of the polygon and 'e' to end. 
-Please enter the vertices counter-clockwise 
+(Please enter the vertices counter-clockwise)
 ```
 
 Once the user is done entering the polygon, your code should check whether the polygon is simple (by implementing a function to do that); if it is simple, it should print a message that the test is passed: 
 ```
-testing if polygon is simple.. yes
+testing if polygon is simple: yes
 ```
 Otherwise, it should print a message that the polygon is not simple and clear the polygon so that the use can start again. 
  
  
-Once the user is done entering a simple polygon,  the next step is to click on the desired location of the guard.  In terms of interface,  no specific requirements.  You could assume that any mouse click once the polygon is finished represents a guard; or you can require that the user presses `g` before clicking on the location of a guard, otherwise the moue clicks are ignored.  This is up to you, but make sure to document it in the Readme file and also while the program is running so that the user is able to run your code (for e.g. you could maae your `keypress` function  print the interface of your code when  key `h` is pressed).
+Once the user is done entering a simple polygon,  the next step is to click on the desired location of the guard.  In terms of interface,  no specific requirements.  You could assume that once the polygon is finished, any mouse click  represents a guard; or you can require that the user presses `g` before clicking on the location of a guard, otherwise the mouse clicks are ignored.  This is up to you, but make sure to document it in the Readme file and also while the program is running so that aanyone is able to run your code (for e.g. you could make your `keypress` function  print the interface of your code when  key `h` is pressed).
 
 
-The guard has to be inside the polygon. You can assume that the user enters a guard that is inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave itto the end, and you check out the full code in the OR textbook (the degenerate cases are messy, but there is full pseudocode in the textbook).
+The guard has to be inside the polygon. You can assume that the user enters a guard that is inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave it to the end. We'll discuss the basic idea in class, but the degenerate cases are messy;  there is full pseudocode in the O'Rourke textbook which I suggest you follow).
 
 Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function that render it with a different color. 
 

@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: ----Project 4
+title: ----Project 4 (guard)
 nav_order: 10
 ---
 
@@ -15,9 +15,9 @@ nav_order: 10
 * Group policy: Partner-optional 
 * Collaboration policy: Level 1
 
+***
 
-
-In this project you will write code to find the visible area in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum and   a point inside this polygon that represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard. To manage complexity we'll split it into two parts:
+In this project you will write code to find the visible area of a guard in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum and   a point inside this polygon that represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard. To manage complexity we'll split it into two parts:
 
 Part 1:  Reaad the  polygon and the guard from the user,  compute the visible polygon and display it.
 

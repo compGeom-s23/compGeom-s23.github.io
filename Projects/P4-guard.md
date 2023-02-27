@@ -101,20 +101,17 @@ Even though it's not convex, the visible polygon has some nice properties that w
 ### Some ideas to take this a step up 
 
 If you want a challenge,  try to come up with an improved algorithm that runs in `O(n lg n)` using a radial sweep (process the vertices in radial order around the guard).  Several algorithm are known for computing the visible polygon faster
-than the naive `O(n<sup>2</sup>)` algorithm: the algorithm by  Joe and Simpson runs in `O(n)` time, and the one by Asano in `O(n lg n)` time. A
-recent algorithm by Mungiu et al seems to be the fastest in practice.   If you are considering an improved algorithm the papers listed below may be helpful. 
-
-If you want to go down this path you will demo your code in class, get a round of applause, extra credit, and generally feel amazing.   
+than the quadratic algorithm: the algorithm by  Joe and Simpson runs in `O(n)` time, and the one by Asano in `O(n lg n)` time. A
+recent algorithm by Mungiu et al seems to be the fastest in practice.   If you are considering an improved algorithm the papers listed below may be helpful.  If you want to go down this path you will demo your code in class, get a round of applause, extra credit, and generally feel amazing.   
 
 
 
-*  <a
-  href="http://cs.smith.edu/~jorourke/books/ArtGalleryTheorems/Art_Gallery_Chapter_8.pdf">Joe
+*  <a  href="http://cs.smith.edu/~jorourke/books/ArtGalleryTheorems/Art_Gallery_Chapter_8.pdf">Joe
   and Simpson's O(n) visibility polygon</a>
 											  
- * <a href="https://arxiv.org/pdf/1403.3905v1.pdf">Efficient
-  computation  of visibility polygons</a> (2014)
-  <li><a href="https://doc.cgal.org/latest/Visibility_2/index.html#Chapter_2D_Visibility_Computation">CGAL
+ * <a href="https://arxiv.org/pdf/1403.3905v1.pdf">Efficient computation  of visibility polygons</a> (2014)
+ 
+ * <a href="https://doc.cgal.org/latest/Visibility_2/index.html#Chapter_2D_Visibility_Computation">CGAL
   visibility algorithms</a>
   
 
@@ -122,34 +119,35 @@ If you want to go down this path you will demo your code in class, get a round o
 
 #### Some more ideas for extra features: 
 
-Implement testing whether the point is inside the polygon (the ray crossing algorithm). 
+* Implement testing whether the point is inside the polygon (the ray crossing algorithm). 
 
-Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see.
+* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see.
 
 ![](guard3.png)
 
+*** 
 
 #### Some cool apps: 
-<ul>
-<li><a href="http://ncase.me/sight-and-light/">Sight-and-light</a> 
 
-  <li><a href="https://legends2k.github.io/2d-fov/">Field of view and los in 2d</a>
+* <a href="http://ncase.me/sight-and-light/">Sight-and-light</a> 
+
+* <a href="https://legends2k.github.io/2d-fov/">Field of view and los in 2d</a>
   
   
-  <li><a href="http://www.redblobgames.com/articles/visibility/">2d
+* <a href="http://www.redblobgames.com/articles/visibility/">2d
   visibility</a>
 
-  <li><a
-  href="https://davidglavas.me/computing-visibility-polygons/">Glavas
+ * <a href="https://davidglavas.me/computing-visibility-polygons/">Glavas
   blog on computing visibility polygons</a>
 
-</ul>
 
+*** 
 
 ### What and how to turn in
 You will receive the assignment on GitHub, but there will be no startup code. To submit, simple push your code into your github repository for this assignment. Don’t forget to add a README file containing:  a brief, description of the project; how to use your code (what keys to press to drawa the polygon and anything else in the interface); a list of bugs (if any) and when they happen;  a list of the main functions you implemented (); any extra features you implemented. 
 
 Do not turn in any object or executable files.
+
 
 ### Evaluation
 

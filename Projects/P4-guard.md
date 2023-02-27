@@ -140,7 +140,7 @@ If you try www searching, you may be surprised to find that this is a popular pr
 
 * Implement testing whether the point is inside the polygon (the ray crossing algorithm). 
 
-* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see, like so:   <a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/dylanisaac-guarding-demo.mov">demo1</a> |  <a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/wk-moving_guards.mov">demo2</a>
+* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see, like so:   <a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/dylanisaac-guarding-demo.mov">demo1</a> ;   <a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/wk-moving_guards.mov">demo2</a>
 
 ![](guard3.png) 
 
@@ -149,11 +149,13 @@ If you try www searching, you may be surprised to find that this is a popular pr
 
 
 ### What and how to turn in
-You will receive the assignment on GitHub, but there will be no startup code. To submit, simple push your code into your github repository for this assignment. 
+You will receive the assignment on GitHub, but there will be no startup code. To submit, simple push your code into your github repository for this assignment. Do not turn in any object or executable files.
 
 Add a README file containing:  a brief, description of the project;  info on the interface, i.e. everything one  needs to  know in order to run your code; a list of known bugs (if any) and when they happen;  a list of the main functions you implemented (); any extra features you implemented. 
 
-Do not turn in any object or executable files.
+Also: Capture a movie of the screen while you demo your code and upload it to github as `demo.mov`. To demo, no voice, just run your code and show what it can do (To capture a movie  on a Mac press `shift+command+5` and then choose the option that says `record selected portion`). 
+
+
 
 
 ### Evaluation

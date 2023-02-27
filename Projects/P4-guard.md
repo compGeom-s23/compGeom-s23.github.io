@@ -145,7 +145,7 @@ If you try www searching, you may be surprised to find that this is a popular pr
 <a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/dylanisaac-guarding-demo.mov">demo1</a>
 <a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/wk-moving_guards.mov">demo2</a>
 
-<a href="demo-guard-di.mov">demo</a>
+<a href="guaard-demo-di.mov">demo</a>
 
 ![](guard3.png) 
 

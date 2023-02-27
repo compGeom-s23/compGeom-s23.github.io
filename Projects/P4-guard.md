@@ -75,7 +75,7 @@ bool isVisible(Vector<point2d> polygon, int i, point2d p)
 
 Some questions you will need to answer are:  through what vertices do you shoot the rays, and how do you get the points along the boundary of the visible polygon, in the right order? 
 
-![](guard4.png)![](guard5.png)![](guard6.png)[](guard7.png)
+![](guard2.png)
 
 
 
@@ -128,6 +128,7 @@ Implement testing whether the point is inside the polygon (the ray crossing algo
 
 Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see.
 
+![](guard3.png)
 
 
 #### Some cool apps: 

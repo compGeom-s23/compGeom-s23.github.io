@@ -17,7 +17,9 @@ nav_order: 10
 
 ***
 
-In this project you will write code to find the visible area of a guard in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum,  and   a point inside this polygon which represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard. To manage complexity we'll split it into two parts:
+In this project you will write code to find the visible area of a guard in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum,  and   a point inside this polygon which represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard.  Note that the area that's visible must reside einside the musum (can't see through the walls), and must be a polygon (can't have holes and islands).  We'll refer to it sa the _visible polygon_. 
+
+To manage complexity we'll split this project into two parts:
 
 Part 1:  Read the polygon and the guard from the user, compute the visible polygon and display it.
 
@@ -31,20 +33,20 @@ Part 2: Extend so that the guard is moving inside the polygon and the visible ar
 
 Unlike previous projects this one does not need to take any arguments on the command line. To initialize a polygon and the position of a guard inside the polygon you will use the mouse (see examples in class). 
 
-The user should  press `s` to start the polygon, then click on the location of the vertices, then click 'e' when the polygon is done. Then press `g` to enter the location of the guard.   The user is expected to enter the polygon in counter-clockwise boundary order. Print a message as you start: 
+The user should  press `s` to start the polygon, then click in the window on the desired location of the vertices, then press `e` when the polygon is done. Then press `g` to enter the location of the guard.   The user is expected to enter the polygon in counter-clockwise boundary order. It's always helpful (and good style) to print a message as the program starts letting the user know the interface: 
 ``` 
 press 's' to start entering the vertices of the polygon and 'e' to end. 
-The vertices shoud b entered in ccw direction
+The vertices shoud be entered in ccw direction
 ```
 
-Once th user is done eentering the polygon, your code should check whether the polygon is simple (by implementing a function to do that); if it is simple, it should print a message that the test is passed;
+Once the user is done entering the polygon, your code should check whether the polygon is simple (by implementing a function to do that); if it is simple, it should print a message that the test is passed: 
 ```
 testing if polygon is simple.. yes
 ```
-Otherwise, it should print a message that the polygon is not simple, and clear the polygon so that the use can start again. 
+Otherwise, it should print a message that the polygon is not simple and clear the polygon so that the use can start again. 
  
  
-The guard has to be inside the polygon. You can assume that the user enters a agurad that's inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class (the degenerate cases are messy, but there is full pseudocode in the textbook).
+Once the user is done entering aa simple polygon,  the next step is to click on the desired locaation of the guard. The guard has to be inside the polygon. You can assume that the user enters a guard that's inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave itto the end, and you check out the full code in the OR textbook (the degenerate cases are messy, but there is full pseudocode in the textbook).
 
 Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function that render it with a different color. 
 
@@ -59,14 +61,14 @@ Towards an algorithm:  Draw a couple of polygons and try out some cases.  Start 
 
 As we try out various cases we make a couple of observations: 
 
-1. Not all vertices of a non-convex polygon are necessarily visible. This suggests a helper function to determine if a vertex of a polygon is visible from the guard point which might look something like this:   
+* Not all vertices of a non-convex polygon are necessarily visible. This suggests a helper function to determine if a vertex of a polygon is visible from the guard point `p`,  which might look something like this:   
 
 ```
-\\return true if polygon[i] is vissible from point p
+\\return true if polygon[i] is visible from point p
 bool isVisible(Vector<point2d> polygon, int i, point2d p) 
 ```
 
-2. The visible polygon consists of  the vertices of the polygon that are visible, and points intertoor to the edges of the polygon thata represenet the interesection of rays from the viewepoint p.  You will need to shoot rays through some vertices, and For each ray, find its first intersection with the boundary of the polygon.
+* The visible polygon consists of the vertices of the museum polygon that are visible, possibly interleaved with points interior to the edges of the museum that represent  intersections with rays from the guard.  The question is: how to compute these interior points? You will need to shoot rays through some vertices of the museum (which ones?), and, for each ray, find its first intersection with the boundary of the museum.
 
 Some questions you will need to answer are:  through what vertices do you shoot the rays, and how do you get the points along the boundary of the visible polygon, in the right order? 
 

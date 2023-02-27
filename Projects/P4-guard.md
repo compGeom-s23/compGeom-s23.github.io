@@ -140,12 +140,7 @@ If you try www searching, you may be surprised to find that this is a popular pr
 
 * Implement testing whether the point is inside the polygon (the ray crossing algorithm). 
 
-* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see, like so:  
-
-<a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/dylanisaac-guarding-demo.mov">demo1</a>
-<a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/wk-moving_guards.mov">demo2</a>
-
-<a href="guard-demo-di.mov">demo</a>
+* Add more than one moving guards, and render their visible areas transparently, so that the overlap is easy to see, like so:   <a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/dylanisaac-guarding-demo.mov">demo1</a> |  <a href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs3250-CompGeom/fall21/Assignments/A5-artGallery/wk-moving_guards.mov">demo2</a>
 
 ![](guard3.png) 
 

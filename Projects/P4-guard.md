@@ -17,28 +17,37 @@ nav_order: 10
 
 ***
 
-In this project you will write code to find the visible area of a guard in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum and   a point inside this polygon that represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard. To manage complexity we'll split it into two parts:
+In this project you will write code to find the visible area of a guard in a museum. The input will be  a simple, non-intersecting polygon in the plane which represents the boundary of the museum,  and   a point inside this polygon that represents a guard. The goal  is to come up with and implement an algorithm that computes and displays the part of the museum that's visible to the guard. To manage complexity we'll split it into two parts:
 
-Part 1:  Reaad the  polygon and the guard from the user,  compute the visible polygon and display it.
+Part 1:  Read the polygon and the guard from the user, compute the visible polygon and display it.
 
-Part 2: Extend so that the guard is moving inside the polygon, and the visible area is re-computed and displayed as the guard is moving. Move the guard so  that the guard does not get stuck in a corner of the polygon.
-
+Part 2: Extend so that the guard is moving inside the polygon and the visible area is re-computed and displayed as the guard is moving. Move the guard so  that the guard does not get stuck in a corner of the polygon.
 
 ![](guard0.png)
-
 
 ***
 
 ### The interface
 
-To initialize a polygon and the position of a guard inside the polygon you will use the mouse (see examples in class). 
+Unlike previous projects this one does not need to take any arguments on the commaand line. To initialize a polygon and the position of a guard inside the polygon you will use the mouse (see examples in class). 
 
-The polygon has to be simple aand entered in counter-clockwise boundaary order. To start, the user should make sure that the polygon entered is simple and in ccw order. Ideally there would be a function that tests whether a polygon is simple.
+The user is expected to enter the polygon in counter-clockwise boundary order. The polygon should be simple. Your code should check whether the polygon is simple (by implementing a function to do that); if it is simple, it should print a message that the test is passed;
+
+```
+testing if polygon is simple.. yes
+```
+ Otherwise, it should print a message that the polygon is not simple, and clear the polygon so that the use can start again. 
+ 
+ 
+
+The guard has to be inside the polygon. You can assume that the user enteers a agurad thata's inside.   Ideally (extra credit) there would be a function that tests whether a point is inside a polygon ---- we'll talk about this in class, and it's a nice idea (the degenerate cases are messy, but there is full pseudocode in the textbook).
+
+Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function that render it with a different color. 
 
 
-The guard has to be inside the polygon. To start, the user should make sure it is inside. Ideally there would be a function that tests whether a point is inside a polygon ---- we'll talk about this in class, and it's a nice idea (the degenerate cases are messy, but there is full pseudocode in the textbook).
+### Renndering the visible polygon 
 
-Once the polygon and the guard are set, run your algorithm that computes that polygon that's visible and render it with a different color. In  OpenGL can render a polygon in two ways: just its boundary (GL_LINE mode), or filled (GL_FILL mode), by turning on one of:
+In  OpenGL can render a polygon in two ways: just its boundary (GL_LINE mode), or filled (GL_FILL mode), by turning on one of:
 
 ```
 glPolygonMode(GL_LINE);

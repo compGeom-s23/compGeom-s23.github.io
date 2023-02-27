@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: ----Project 2
+title: ----Project 2 (hull2d)
 nav_order: 8
 ---
 

@@ -40,6 +40,13 @@ _Feb 13-24_
 - __Resources:__  [ex-kdtrees.pdf](Lectures/L5-spacepartition/ex-kdtree.pdf)
 - __Project__: [work on project 2, due on Sunday 2/19]; [Project 3-mondrian](Projects/P3-mondrian.md)
 
+### Week 6, 7: 
+_Feb 27-March 7_
+
+- __Topics:__  Range trees - queries. Segment-segment intersection.  Point-in-polygon test. 
+- __Resources:__  [ex-rangetree3d.pdf](Lectures/L5-spacepartition/ex-rangetree3d.pdf)
+- __Project__: [work on project 3, due on Wed 3/1]; [Project 4-guard](Projects/P4-guard.md) 
+
 
 ***
 

@@ -57,7 +57,7 @@ Once the user is done entering a simple polygon,  the next step is to click on t
 
 The guard has to be inside the polygon. You can assume that the user enters a guard that is inside.   Ideally (extra credit) you will write  a function to test whether a point is inside a polygon ---- this is a nice basic algorithm to know about and we'll talk about this in class. If you want to work on this I would suggest you leave it to the end. We'll discuss the basic idea in class, but the degenerate cases are messy;  there is full pseudocode in the O'Rourke textbook which I suggest you check out and follow.
 
-Once the polygon and the guard are set, call your function to compute  the visible polygon, and then call the function to render it. 
+Once the polygon and the guard are set, (call your function to) compute  the visible polygon and  (call the function to) render it. 
 
 
 
@@ -87,11 +87,11 @@ bool isVisible(Vector<point2d> polygon, int i, point2d p)
 
 You will need to render the visible polygon filled. Note that visible polygon is not necessarily convex. 
 
-OpenGL has two modes for rendering polygons: boundary (`GL_LINE` mode) or filled (`GL_FILL` mode). To select one or the other you need to set the polygon mode: 
+You can tell OpenGL  to render polygons  boundary (`GL_LINE` mode) or filled (`GL_FILL` mode) with the following commands:
 
 ```
-glPolygonMode(GL_LINE);
-//glPolygonMode(GL_FILL);
+glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+//glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 ```
 
 Something to be aware of is that openGL can only render filled polygons that are __convex__. This seems like a big limitation, however if you think about it a little it becomes clear that it is not straightforward how to render a non-convex polygon filled: to do that essentially you need to compute the triangulation of the polygon, and then render one triangle at a time. Computing a triangulation of a non-convex polygon is a bigger problem which we'll talk about in the coming weeks, and OpenGL does not do it  as part of  the `glDraw` function.  

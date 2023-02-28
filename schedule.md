@@ -43,7 +43,7 @@ _Feb 13-24_
 ### Week 6, 7: 
 _Feb 27-March 7_
 
-- __Topics:__  Range trees - queries. Segment-segment intersection.  Point-in-polygon test. 
+- __Topics:__  Range trees - queries. Segment-segment intersection.  Point-in-polygon tests and ray crossings. Art gallery problems, definition and properties. Fisk's sufficiency proof.  
 - __Resources:__  [ex-rangetree3d.pdf](Lectures/L5-spacepartition/ex-rangetree3d.pdf)
 - __Project__: [work on project 3, due on Wed 3/1]; [Project 4-guard](Projects/P4-guard.md) 
 

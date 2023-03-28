@@ -264,7 +264,7 @@ a node with each node; another way is to compute the region of a node on the fly
 function take as parameter the bounding box of the region
 corresponding to the node it is called upon.  The input points are
 generated in the range [0,WINDOWSIZE] x [0, WINDOWSIZE]. This is the
-region fo the root.
+region of the root.
 
 
 

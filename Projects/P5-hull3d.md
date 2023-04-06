@@ -39,15 +39,3 @@ Add a README file containing:  a brief, description of the project;  info on the
 Also: Capture a movie of the screen while you demo your code and upload it to github, either in #general or a a direct message.  To demo, no voice, just run your code and show what it can do (To capture a movie  on a Mac press `shift+command+5` and then choose the option that says `record selected portion`). 
 
 
-
-
-
-
-***
-
-### Start early, program well and enjoy the proces!
-
-This project is significantly harder than the previous ones and has many pieces that you'll have to put together (such as segment intersection) while handling degenerate cases. It is crucial that you develop your code one piece at a time, and test before you move on to the next.  From the beginning, design your code  knowing that you will spend 90% of the time debugging it.   Make the debugging easier.
-
-
-

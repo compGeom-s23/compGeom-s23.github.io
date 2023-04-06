@@ -26,8 +26,8 @@ In this project you will write code to compute the convex hull of a set of point
 You will receive starter code on Github which handles the interface, generating the points and rendering them.  Your main task is to fill in  the function the computes the hull. You can choose to implement either the gift wrapping or the incremental algorithm. 
 
 Whichever algorithm you chhose to implement, we will make the following simplifications: 
-* store the hull as a vector of faces. you do not need to store the topology between faces and edges (i.e.  what faces and edges are adjacent  to a face)
-* you do not need to handle  coplanar points. Most likely this mean that for coplanar faces, you will generate many and possibly overlapping triangles -- that is fine, given the timing of this project.   Whiel at it, consider how you might solve this problem if you had more time.  
+* store the hull as a vector of faces. you do not need to store the topology between faces and edges (i.e.  what how faces and edges are adjacent  to each other)
+* you do not need to handle  coplanar points. Most likely this means that for coplanar faces, you will generate many and possibly overlapping triangles -- that is fine, given the timing of this project.   While at it, consider how you might solve this problem if you had more time.  
 
 
 

@@ -16,6 +16,7 @@ nav_order: 11
 * Collaboration policy: Level 1
 
 In this project you will write code to compute the convex hull of a set of points in 3D, using either gift wrapping or the incremental algorithm, both of which run in quadratic time.  
+
 ![](hull3d.png)
 
 

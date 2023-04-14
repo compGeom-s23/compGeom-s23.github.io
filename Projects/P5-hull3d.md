@@ -32,7 +32,7 @@ Whichever algorithm you choose to implement, we will make the following simplifi
 
 ### Startup code 
 
-There are issues with infront/behind predicates when using points with  floating point coordinates. The basic problem is the following:  if p is in front of abc, and q is in front of abp,  it  should imply that q is in front of abc.  But it can be that the general position of a, b, c, p and q is so that the volume of abcq is very small, and transitivity dos not hold. This leads to all sorts of assert fails, where faces that are supposed to be extreme, are not. The solution here would be to use a geometric library that implements  infront/behind with arbitrary precision. This can be done, but  for this project, it's not worth the setup.  What we'll do instead is we'll be switching to integer coordinates.We'll use integer coordinates: 
+There are issues with infront/behind predicates when using points with  floating point coordinates. The basic problem is the following:  if p is in front of abc, and q is in front of abp,  it  should imply that q is in front of abc.  But it can be that the general position of a, b, c, p and q is so that the volume of abcq is very small, and transitivity dos not hold. This leads to all sorts of assert fails, where faces that are supposed to be extreme, are not. The solution here would be to use a geometric library that implements  infront/behind with arbitrary precision. This can be done, but  for this project, it's not worth the setup.  What we'll do instead is we'll be switching to integer coordinates.
 
 ```
 typedef struct _point3d {
@@ -40,18 +40,17 @@ typedef struct _point3d {
 }
 ```
 
-Github  includes the code for:
+Github  includes code for a bunch of pimitives, including:
 
 ```
 long long  signed_volume(point3d a, point3d b, point3d c, point3d d) 
-
 bool face_is_extreme(int i, int j, int k,  vector<point3d>& points) 
-
 ```
 
 ### Gift wrapping: Finding the first face on the hull 
 
-Github includes the code for finding the first face. 
+
+In case you choose to  implement gift wrapping, finding the first face on the hull is surprisingly not straightforward, and Github includes the code for  it: 
 
 ```
 // finds and returns a face on the hull

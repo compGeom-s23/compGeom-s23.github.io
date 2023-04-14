@@ -99,9 +99,22 @@ Something to be aware of is that openGL can only render filled polygons that are
 Even though it's not convex, the visible polygon has some nice properties that will make rendering it a lot easier!
 
 
-__Rendering a transparent polygon:__  If you want transparency you can specify the color using 4 values, the usual RGB values plus a value that represents the transparency. You also need to tell OpenGL to blend. [to continue]
+__Rendering a transparent polygon:__  If you want to do alpha blending with OpenGL, you basically  need to  specify the color using 4 values, the usual RGB values plus a value that represents the transparency.   First, enable blending via glEnable(GL_BLEND) (ideally you would remember to disable it after again when not doing blending, since that will affect performance).  While drawing it, specify your method of blending as such: glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA). Make sure to give an alpha value to the colors you’re specifying! 0 is transparent, and 1 is opaque. 
 
+You could set up blending in your `display()` function: 
 
+```
+  glEnable(GL_BLEND);
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+```
+
+Then when you want to  do  blending , specify your color with 4 values, like so: 
+
+```
+//set color 
+  GLfloat color[4] = {1, 0, 0, 0.5}; //half-transparent red 
+  glColor4fv(color);   
+ ```
 
 ### Some ideas to take this a step up 
 

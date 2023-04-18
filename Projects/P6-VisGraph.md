@@ -137,7 +137,7 @@ Once you have an adjacency list, you can pretty much use Dijkstra's algorithm st
 ### What and how to  turn in
 
 
-You will receive the assignment on GitHub. To submit, simple push your
+You will receive the assignment on GitHub; it contains no code.  To submit, simple push your
 code into your github repository for this assignment. Do not turn in
 any object or executable files.
 

@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: ----Project 6 (path planning via vis graph)
+title: ----Project 6 (vis graph)
 nav_order: 12
 ---
 

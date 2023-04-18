@@ -27,16 +27,16 @@ graph (VG) approach.
 ### Overview
 
 One of the fundamental problems in robotics is motion planning: given
-a robot R and an environment (or physical space), a start position
+a robot moving in an environment (or physical space), a start position
 and an end position, find a path so that the robot can
 move from start to end, without collisisons. Generally speaking, in
 most situations we are happy to compute just a path, not necessarily
 the optimal/shortest, but in some special situations we are able to compute
-an optimal shortest path.
+an optimal (shortest) path.
 
 In this first project we will consider a simple instance of the path
 planning problem and make some simplifying assumptions which will
-allow us to do optimal routing:
+allow us to do optimal planning:
 
 
  - 2D: We'll assume that the environment consists of a set of 2D
@@ -61,8 +61,7 @@ into cells, and construct a road map of the free space to guide the
 motion between neighboring cells. The road map is essentially a graph
 of free space. Ideally we want to build the roadmap so that:
 
-    1. Any path in the road map corresponds to a collision-free path in
-    the free space.
+    1. Any path in the road map corresponds to a collision-free path in the free space.
     2. Any path in the free-space corresponds to a path in the road map.
 
 If we are able to compute a road map of free space with these

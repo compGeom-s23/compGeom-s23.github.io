@@ -66,8 +66,8 @@ _Feb 27-March 7_
 - __Resources:__
 - __Project:__ [work on project 5, hull 3d] [work on project 6, visibility graph]
 
-### Week 12, 13: 
+### Week 12, 13, 14: 
 - __Topics:__ Motion planning 
 - __Resources:__
-- __Project:__
+- __Project:__ [work on project 6, visibility graph] [work on project 7, heuristical mp]
 

@@ -155,9 +155,8 @@ says record selected portion).
 
 ### Start early, program well and enjoy the proces!
 
-By now you know how frustrating debugging can be.  It is crucial that you
-develop your code one piece at a time, and test before you move on to
+By now you know how frustrating debugging can be.  It is crucial that you __think before you code__,  develop your code one piece at a time, and test before you move on to
 the next. From the beginning, design your code knowing that you will
-spend 90% of the time debugging it. 
+spend 90% of the time debugging it. If you approach your algorithm with a theoretical mindset, and think before you start coding, you will be a lot more effective. 
 
 

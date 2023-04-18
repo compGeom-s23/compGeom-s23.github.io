@@ -1,12 +1,12 @@
 ---
 layout: default 
-title: ----Project 6 (path Planning via vis graph)
+title: ----Project 6 (path planning via vis graph)
 nav_order: 12
 ---
 
 
 
-## Project 6:  Path Planning with the Visibility Graph
+## Project 6:  Path Planning via Visibility Graph
 
 
 *** 

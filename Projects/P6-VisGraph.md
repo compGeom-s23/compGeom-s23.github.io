@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: ----Project 6 (Path Planning with the Visibility Graph)
+title: ----Project 6 (path Planning via vis graph)
 nav_order: 12
 ---
 
@@ -21,6 +21,7 @@ In this project you will implement geometric motion planning for a point robot
 moving among polygonal obstacles in 2d  using the visibility
 graph (VG) approach.
 
+![](vg1.png) ![](vg1.png) ![](vg3.png)
 
 
 ### Overview
@@ -77,11 +78,7 @@ possible to construct a type of roadmap that will allow to compute
 optimal paths: the visibility graph.  This is a graph whose vertices are
 the vertices of the obstacles, and its edges (u,v) are all the pair of
 vertices that can "see" each other, that is, segment uv does not
-intersect the interior of any obstacle. Below are some screenshots
-(the first screenshot is from
-http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/16311/www/s06/lecture/lec8.html).
-
-![](vg1.png) ![](vg1.png) ![](vg3.png)
+intersect the interior of any obstacle. Some screenshots above. 
 
 
 Shortest paths in 2D have the very nice and convenient property that

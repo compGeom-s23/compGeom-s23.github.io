@@ -21,7 +21,7 @@ In this project you will implement geometric motion planning for a point robot
 moving among polygonal obstacles in 2d  using the visibility
 graph (VG) approach.
 
-![](vg1.png) ![](vg1.png) ![](vg3.png)
+![](vg1.png) ![](vg2.png) ![](vg3.png)
 
 
 ### Overview

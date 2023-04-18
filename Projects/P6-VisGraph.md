@@ -83,7 +83,7 @@ intersect the interior of any obstacle. Some screenshots above and below.
 
 Shortest paths in 2D have the very nice and convenient property that
 they are straight lines, and they have to go through the vertices of
-the obstacles. This basically means that any shortest path will be
+the obstacles (a path that takes you to a point interior to an edge and then continues to a vertex is not shortest). This basically means that any shortest path will be
 contained in the VG. Once the visibility graph (VG) is computed, the
 shortest paths from start to end can be computed for e.g. using
 Dijkstra's algorithm.

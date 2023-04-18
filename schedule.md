@@ -50,5 +50,24 @@ _Feb 27-March 7_
 
 ***
 
+### Week 8
+- __Topics:__ Line segment intersection, Bentley Ottman sweep 
+- __Resources:__
+- __Project:__ [work on Project 4, art gallery] 
 
+### Week 9, 10
+- __Topics:__ Convex hulls in 3d: Definition, properties, naive, gift-wrapping, incremental.
+- __Resources:__
+- __Project:__ [work on Project 5, hull3d] 
+
+
+### Week 10, 11: 
+- __Topics__: Polygon triangulation: naive, by ear removal, triangulating uni-monotone and monotone polygons, O(n lg n) triangulations via plane sweep to compute trapezoidation. 
+- __Resources:__
+- __Project:__ [work on project 5, hull 3d] [work on project 6, visibility graph]
+
+### Week 12, 13: 
+- __Topics:__ Motion planning 
+- __Resources:__
+- __Project:__
 

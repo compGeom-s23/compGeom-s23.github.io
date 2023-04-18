@@ -51,7 +51,7 @@ allow us to do optimal planning:
   rely on sensors to learn the environment, instead the environment is
   given.
 
-- Point robot: the robit is assume to be a point (yes, that's not very
+- Point robot: the robot is assume to be a point (yes, that's not very
   realistic, but it's a good place to start).
 
 
@@ -94,7 +94,7 @@ Dijkstra's algorithm.
 1. When you start your code, have a pre-set scene with polygonal
 obstacles.  Allow the user to reset the scene and and enter polygons
 using the mouse (in a manner similar to previous projects).  
-scene.
+
 
 2. Once the scene is done, compute and render the visibility graph.
 
@@ -105,11 +105,11 @@ render the resulting path (for e.g. in a different color and different
 line width). Let the user enter different start and end positions and re-compute the path. 
 
 
-All the geometric primitives that you'll need for this project, you've
-already written them.  So that part should feel easier. The other part
+All the geometric primitives that you'll need for this project, you 
+already have them.  So that part should feel easier. The new part
 is implementing Dijsktra's algorithm. In csci2200 we discussed the
 pseudocode for Dijkstra. In this project you have an opportunity to
-figure out the details.
+work through  the details.
 
 
 ### Dijkstra's algorithm 
@@ -119,8 +119,7 @@ adjacency list form.  Here you have a bunch of edges, and
 you will need to  create an adjacency list for the VG graph.
 
 
-Once you have an adjacency list, you can pretty much forllo with the
-algorithm from the textbook.
+Once you have an adjacency list, you can pretty much use Dijkstra's algorithm straight out of a textbook.
 
 
 ## Extra features

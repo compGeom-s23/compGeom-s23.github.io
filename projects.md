@@ -15,7 +15,7 @@ nav_order: 5
 | [Project 3 (kdtree)](Projects/P3-mondrian.md) | due: mid of week 6 (Wed March 1)
 | [Project 4 (guard)](Projects/P4-guard.md) | due: end of week 7 (p1), end of week 8 (p2) (Friday March 7,  Monday April 3)
 | [Project 5 (hull3d)](Projects/P5-hull3d.md) | 
-| [Project 6 (vis graph)](Projects/P6-vg.md) | 
+| [Project 6 (vis graph)](Projects/P6-VisGraph.md) | 
 | [Project 7 (3df)](Projects/) | 
 
 

@@ -6,7 +6,7 @@ nav_order: 13
 
 
 
-## Project 7:  Approximate motion planning for a polygonal robot moving in 2d with translation and rotation 
+## Project 7:  Approximate motion planning with translation and rotation 
 
 
 *** 

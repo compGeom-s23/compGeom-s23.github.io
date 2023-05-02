@@ -11,7 +11,7 @@ nav_order: 13
 
 *** 
 * __Assigned:__ Tuesday, May 2nd
-* __Due:__  part 1 (Tuesday May 9th), final Friday May 19th
+* __Due:__  Friday May 19th, with checkin on Tuesday May 9th. 
 * Group policy: Partner-optional 
 * Collaboration policy: Level 1
 * Overall policy:  This project serves as a final exam, and as such you are expected to complete it without help from the instructor or the TAs.  Looking for resources on the www, including papers and code, is allowed. In terms of weight, all projects are weighed equally, and each project (this one included) amounts to 13% of the final grade. 

@@ -17,7 +17,7 @@ nav_order: 13
 * Overall policy:  This project serves as a final exam, and as such you are expected to complete it without help from the instructor or the TAs.  Looking for resources on the www, including papers and code, is allowed. In terms of weight, all projects are weighed equally, and each project (this one included) amounts to 13% of the final grade. 
 
 
-
+### Overview
 In this project you will implement approximate motion planning for a polygonal robot moving among polygonal obstacles in 2d  with translation and rotation (3dof) using one of the following algorithms:  A*, RRT or PRM .
 
 

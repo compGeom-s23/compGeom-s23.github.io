@@ -17,11 +17,7 @@ nav_order: 13
  
 
 
-In this project you will implement approximate motion planning for a polygonal robot moving among polygonal obstacles in 2d  with translation and rotation (3dof) using one of the following algorithms: 
-
-* A*
-* RRT
-* PRM 
+In this project you will implement approximate motion planning for a polygonal robot moving among polygonal obstacles in 2d  with translation and rotation (3dof) using one of the following algorithms:  A*, RRT or PRM .
 
 
 ### Interface 
